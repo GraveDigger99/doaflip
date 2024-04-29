@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240429044344">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper wrapper_homepage">
+		<header class="header">
+			<div class="header__container header__container_wide">
+				<div class="header__top">
+					<div class="header__logo logo">
+						<a href="#" class="logo__link">
+							<img src="img/logo/doaflip-logo.svg" alt="icon: Doaflip">
+						</a>
+						<p class="logo__text">
+							Федеральная сеть <br> спортивно-развлекательных центров
+						</p>
+					</div>
+					<ul class="header__social social">
+						<li>
+							<a href="#">
+								<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.317173 7.90761C2.46554 6.75094 4.86369 5.78553 7.1044 4.81521C10.9593 3.22589 14.8295 1.66412 18.7388 0.210134C19.4994 -0.0375962 20.866 -0.279833 21 0.821879C20.9266 2.3814 20.6247 3.9318 20.4177 5.48219C19.8922 8.89164 19.2848 12.2894 18.6925 15.6877C18.4884 16.8196 17.0377 17.4056 16.1095 16.6812C13.8787 15.2084 11.6308 13.7498 9.42856 12.2429C8.70716 11.5264 9.37612 10.4974 10.0204 9.98575C11.8577 8.21591 13.8062 6.71222 15.5475 4.85091C16.0172 3.74225 14.6294 4.67659 14.1716 4.9629C11.6563 6.65715 9.20256 8.45484 6.55064 9.94386C5.19605 10.6727 3.61724 10.0499 2.26326 9.64317C1.04927 9.15185 -0.729718 8.65686 0.317051 7.90775L0.317173 7.90761Z" fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8093 23.4302H11.8045C9.84448 23.4295 7.91861 22.9377 6.20812 22.0047L0 23.6332L1.6614 17.5648C0.636566 15.7887 0.0973057 13.7741 0.0981845 11.7101C0.100754 5.25322 5.35426 0 11.8092 0C14.942 0.00135208 17.8823 1.22094 20.0933 3.43454C22.3044 5.64803 23.5214 8.5903 23.5201 11.7194C23.5175 18.1748 18.2661 23.4275 11.8093 23.4302ZM6.49648 19.8852L6.85191 20.0961C8.34637 20.983 10.0595 21.4522 11.8061 21.4529H11.81C17.1749 21.4529 21.5414 17.0863 21.5435 11.7192C21.5445 9.11836 20.5331 6.67287 18.6953 4.83301C16.8576 2.99315 14.4137 1.97942 11.8139 1.97852C6.44483 1.97852 2.0783 6.34465 2.07617 11.7113C2.07542 13.5505 2.59002 15.3417 3.56438 16.8914L3.79581 17.2597L2.8125 20.8516L6.49648 19.8852ZM17.3091 14.2415C17.5132 14.3401 17.651 14.4067 17.7099 14.5049C17.783 14.6269 17.783 15.2128 17.5393 15.8964C17.2953 16.5799 16.1263 17.2038 15.5641 17.2877C15.06 17.3631 14.422 17.3946 13.7211 17.1718C13.2961 17.0369 12.7511 16.8569 12.0529 16.5554C9.3097 15.3709 7.45585 12.7121 7.10548 12.2096C7.08094 12.1744 7.06377 12.1498 7.0542 12.137L7.05184 12.1339C6.89698 11.9273 5.85938 10.5428 5.85938 9.11002C5.85938 7.76216 6.52147 7.05568 6.82623 6.73048C6.84711 6.7082 6.86631 6.68771 6.88351 6.66893C7.15172 6.37597 7.46875 6.30273 7.66381 6.30273C7.85886 6.30273 8.05415 6.30454 8.22464 6.3131C8.24567 6.31416 8.26756 6.31403 8.29018 6.3139C8.4607 6.3129 8.67329 6.31165 8.88301 6.8154C8.96369 7.00928 9.08175 7.29671 9.20627 7.59985C9.45806 8.21284 9.73625 8.8901 9.78519 8.9881C9.85836 9.13458 9.90711 9.3054 9.80958 9.50077C9.79494 9.53006 9.7814 9.55771 9.76847 9.58412C9.69521 9.73368 9.64132 9.8437 9.51698 9.98888C9.46809 10.046 9.41755 10.1075 9.36702 10.169C9.26636 10.2916 9.1657 10.4142 9.07804 10.5015C8.93156 10.6475 8.77906 10.8058 8.94975 11.0987C9.12044 11.3917 9.7077 12.3499 10.5776 13.1258C11.5127 13.9599 12.3254 14.3124 12.7374 14.4911C12.8178 14.526 12.883 14.5542 12.9308 14.5782C13.2233 14.7247 13.394 14.7002 13.5647 14.5049C13.7354 14.3096 14.2962 13.6505 14.4912 13.3576C14.6862 13.0647 14.8814 13.1135 15.1496 13.2111C15.4178 13.3089 16.8565 14.0167 17.1491 14.1631C17.2062 14.1917 17.2596 14.2175 17.3091 14.2415Z" fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4352 0.902134C23.6132 0.393237 23.4352 0.0231313 22.6473 0.0231313H20.0292C19.3684 0.0231313 19.0634 0.346975 18.8854 0.69395C18.8854 0.69395 17.5383 3.6548 15.6574 5.57473C15.0474 6.12989 14.7678 6.31495 14.4373 6.31495C14.2594 6.31495 14.0306 6.12989 14.0306 5.621V0.879003C14.0306 0.277579 13.8273 0 13.2681 0H9.15042C8.74373 0 8.48956 0.277579 8.48956 0.555159C8.48956 1.13345 9.43001 1.27224 9.53168 2.89146V6.40747C9.53168 7.17082 9.37918 7.30961 9.04875 7.30961C8.15912 7.30961 5.99861 4.32562 4.7023 0.925267C4.44812 0.254448 4.19394 0 3.53308 0H0.889624C0.127089 0 0 0.323842 0 0.670817C0 1.29537 0.889625 4.44128 4.14311 8.60498C6.30362 11.4502 9.37918 12.9769 12.1497 12.9769C13.8273 12.9769 14.0306 12.6299 14.0306 12.0516V9.90036C14.0306 9.20641 14.1831 9.09075 14.7169 9.09075C15.0982 9.09075 15.7845 9.2758 17.335 10.6406C19.1142 12.2598 19.4192 13 20.4105 13H23.0286C23.7911 13 24.1469 12.653 23.9436 11.9822C23.7148 11.3114 22.8506 10.3399 21.7322 9.18327C21.1222 8.53559 20.2072 7.81851 19.9276 7.47153C19.5463 7.0089 19.648 6.82384 19.9276 6.40747C19.9022 6.40747 23.1048 2.29003 23.4352 0.902134Z" fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C13.026 0 14.0784 0.0264001 15.0984 0.0696001L16.3032 0.1272L17.4564 0.1956L18.5364 0.2688L19.5228 0.3456C20.5933 0.427533 21.6005 0.884336 22.3674 1.63565C23.1343 2.38696 23.6117 3.38465 23.7156 4.4532L23.7636 4.9632L23.8536 6.0552C23.9376 7.1868 24 8.4204 24 9.6C24 10.7796 23.9376 12.0132 23.8536 13.1448L23.7636 14.2368C23.748 14.412 23.7324 14.5812 23.7156 14.7468C23.6117 15.8155 23.1341 16.8134 22.367 17.5647C21.5998 18.3161 20.5923 18.7727 19.5216 18.8544L18.5376 18.93L17.4576 19.0044L16.3032 19.0728L15.0984 19.1304C14.0662 19.1753 13.0332 19.1985 12 19.2C10.9668 19.1985 9.9338 19.1753 8.9016 19.1304L7.6968 19.0728L6.5436 19.0044L5.4636 18.93L4.4772 18.8544C3.40674 18.7725 2.39946 18.3157 1.63257 17.5644C0.865672 16.813 0.388289 15.8154 0.2844 14.7468L0.2364 14.2368L0.1464 13.1448C0.0546451 11.9654 0.00581282 10.783 0 9.6C0 8.4204 0.0624 7.1868 0.1464 6.0552L0.2364 4.9632C0.252 4.788 0.2676 4.6188 0.2844 4.4532C0.388249 3.38484 0.86546 2.3873 1.63211 1.63601C2.39876 0.884726 3.40575 0.427803 4.476 0.3456L5.4612 0.2688L6.5412 0.1956L7.6956 0.1272L8.9004 0.0696001C9.933 0.0247595 10.9664 0.00155434 12 0ZM9.6 6.69V12.51C9.6 13.0644 10.2 13.41 10.68 13.134L15.72 10.224C15.8297 10.1609 15.9208 10.07 15.9841 9.9604C16.0475 9.85085 16.0808 9.72654 16.0808 9.6C16.0808 9.47346 16.0475 9.34915 15.9841 9.2396C15.9208 9.13005 15.8297 9.03913 15.72 8.976L10.68 6.0672C10.5705 6.00399 10.4463 5.97072 10.3199 5.97074C10.1935 5.97076 10.0693 6.00407 9.9598 6.06732C9.85033 6.13056 9.75945 6.22152 9.69629 6.33104C9.63313 6.44056 9.59992 6.56477 9.6 6.6912V6.69Z" fill="white" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<div data-da=".header__container,1110,last" class="header__actions">
+						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Мерч</a>
+						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Услуги</a>
+						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Праздники</a>
+						<a class="button button_small-mobile button_italic button_white button_no-mobile" href="#">Магазин</a>
+						<a class="button button_small-mobile button_italic button_icon button_white button_no-mobile" href="#">Выбрать центр</a>
+						<a class="button button_small-mobile button_italic button_red button_callback" href="#">Обратный звонок</a>
+
+					</div>
+					<div class="header__admitted-age admitted-age">
+						<img src="img/age.svg" alt="icon">
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container hero__container_wide">
+					<div class="hero__wrapper">
+						<div class="hero__top top-hero">
+							<div data-da=".hero, 767.98,first" class="main-logo">
+								<div class="main-logo__container">
+									<div class="main-logo__icon">
+										<img src="img/logo/doaflip-logo.svg" alt="icon: Doaflip">
+									</div>
+								</div>
+							</div>
+							<div class="top-hero__content">
+								<div class="top-hero__label">Федеральная сеть спортивно-развлекательных центров</div>
+								<div class="top-hero__actions">
+									<a href="#" class="top-hero__button button button_italic button_red">Купить билет</a>
+									<a href="#" class="top-hero__button button button_italic button_transparent">Обратный
+										звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="hero__body body-hero">
+							<h2 class="body-hero__header-title header-title">выберите центр</h2>
+							<div class="body-hero__slider swiper">
+								<div class="body-hero__wrapper swiper-wrapper">
+									<div class="body-hero__slide swiper-slide">
+										<div class="body-hero__label">Москва</div>
+										<div class="body-hero__locations">
+											<div class="body-hero__location">
+												<div class="body-hero__topic">г. Москва, пр-т Маршала Жукова, 4</div>
+												<a href="#" class="body-hero__link">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 10.125C8.44374 10.125 7.89997 9.96005 7.43746 9.65101C6.97495 9.34197 6.61446 8.90272 6.40159 8.3888C6.18872 7.87488 6.13302 7.30938 6.24154 6.76381C6.35006 6.21824 6.61793 5.7171 7.01126 5.32376C7.4046 4.93043 7.90574 4.66256 8.45131 4.55404C8.99688 4.44552 9.56238 4.50122 10.0763 4.71409C10.5902 4.92696 11.0295 5.28745 11.3385 5.74996C11.6476 6.21247 11.8125 6.75624 11.8125 7.3125C11.8116 8.05815 11.515 8.773 10.9878 9.30025C10.4605 9.82751 9.74565 10.1241 9 10.125ZM9 5.625C8.66625 5.625 8.33998 5.72397 8.06248 5.9094C7.78497 6.09482 7.56868 6.35837 7.44095 6.66672C7.31323 6.97507 7.27981 7.31437 7.34493 7.64172C7.41004 7.96906 7.57076 8.26974 7.80676 8.50574C8.04276 8.74175 8.34344 8.90246 8.67079 8.96758C8.99813 9.03269 9.33743 8.99927 9.64578 8.87155C9.95413 8.74383 10.2177 8.52753 10.4031 8.25003C10.5885 7.97252 10.6875 7.64626 10.6875 7.3125C10.6871 6.86509 10.5091 6.43612 10.1928 6.11975C9.87638 5.80338 9.44742 5.62545 9 5.625Z" fill="white" />
+														<path d="M9.00001 16.875L4.25476 11.2787C4.18882 11.1947 4.12357 11.1101 4.05901 11.025C3.24843 9.95725 2.81054 8.65306 2.81251 7.3125C2.81251 5.67147 3.4644 4.09766 4.62478 2.93728C5.78516 1.7769 7.35898 1.125 9.00001 1.125C10.641 1.125 12.2148 1.7769 13.3752 2.93728C14.5356 4.09766 15.1875 5.67147 15.1875 7.3125C15.1895 8.65245 14.7518 9.95605 13.9416 11.0233L13.941 11.025C13.941 11.025 13.7723 11.2466 13.7469 11.2764L9.00001 16.875ZM4.95732 10.3472C4.95732 10.3472 5.08838 10.5204 5.11819 10.5576L9.00001 15.1358L12.8869 10.5514C12.9116 10.5204 13.0433 10.3461 13.0438 10.3455C13.706 9.47313 14.0638 8.4077 14.0625 7.3125C14.0625 5.96984 13.5291 4.68217 12.5797 3.73277C11.6303 2.78337 10.3427 2.25 9.00001 2.25C7.65735 2.25 6.36968 2.78337 5.42028 3.73277C4.47088 4.68217 3.93751 5.96984 3.93751 7.3125C3.93633 8.40838 4.29457 9.47442 4.95732 10.3472Z" fill="white" />
+													</svg>
+													<span>Найти на карте</span>
+												</a>
+											</div>
+											<div class="body-hero__location">
+												<div class="body-hero__topic">г. Москва, Смирновская, 25, стр. 1</div>
+												<a href="#" class="body-hero__link">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 10.125C8.44374 10.125 7.89997 9.96005 7.43746 9.65101C6.97495 9.34197 6.61446 8.90272 6.40159 8.3888C6.18872 7.87488 6.13302 7.30938 6.24154 6.76381C6.35006 6.21824 6.61793 5.7171 7.01126 5.32376C7.4046 4.93043 7.90574 4.66256 8.45131 4.55404C8.99688 4.44552 9.56238 4.50122 10.0763 4.71409C10.5902 4.92696 11.0295 5.28745 11.3385 5.74996C11.6476 6.21247 11.8125 6.75624 11.8125 7.3125C11.8116 8.05815 11.515 8.773 10.9878 9.30025C10.4605 9.82751 9.74565 10.1241 9 10.125ZM9 5.625C8.66625 5.625 8.33998 5.72397 8.06248 5.9094C7.78497 6.09482 7.56868 6.35837 7.44095 6.66672C7.31323 6.97507 7.27981 7.31437 7.34493 7.64172C7.41004 7.96906 7.57076 8.26974 7.80676 8.50574C8.04276 8.74175 8.34344 8.90246 8.67079 8.96758C8.99813 9.03269 9.33743 8.99927 9.64578 8.87155C9.95413 8.74383 10.2177 8.52753 10.4031 8.25003C10.5885 7.97252 10.6875 7.64626 10.6875 7.3125C10.6871 6.86509 10.5091 6.43612 10.1928 6.11975C9.87638 5.80338 9.44742 5.62545 9 5.625Z" fill="white" />
+														<path d="M9.00001 16.875L4.25476 11.2787C4.18882 11.1947 4.12357 11.1101 4.05901 11.025C3.24843 9.95725 2.81054 8.65306 2.81251 7.3125C2.81251 5.67147 3.4644 4.09766 4.62478 2.93728C5.78516 1.7769 7.35898 1.125 9.00001 1.125C10.641 1.125 12.2148 1.7769 13.3752 2.93728C14.5356 4.09766 15.1875 5.67147 15.1875 7.3125C15.1895 8.65245 14.7518 9.95605 13.9416 11.0233L13.941 11.025C13.941 11.025 13.7723 11.2466 13.7469 11.2764L9.00001 16.875ZM4.95732 10.3472C4.95732 10.3472 5.08838 10.5204 5.11819 10.5576L9.00001 15.1358L12.8869 10.5514C12.9116 10.5204 13.0433 10.3461 13.0438 10.3455C13.706 9.47313 14.0638 8.4077 14.0625 7.3125C14.0625 5.96984 13.5291 4.68217 12.5797 3.73277C11.6303 2.78337 10.3427 2.25 9.00001 2.25C7.65735 2.25 6.36968 2.78337 5.42028 3.73277C4.47088 4.68217 3.93751 5.96984 3.93751 7.3125C3.93633 8.40838 4.29457 9.47442 4.95732 10.3472Z" fill="white" />
+													</svg>
+													<span>Найти на карте</span>
+												</a>
+											</div>
+											<div class="body-hero__location">
+												<div class="body-hero__topic">г. Москва, Кутузовский пр-т, 36, стр. 6</div>
+												<a href="#" class="body-hero__link">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 10.125C8.44374 10.125 7.89997 9.96005 7.43746 9.65101C6.97495 9.34197 6.61446 8.90272 6.40159 8.3888C6.18872 7.87488 6.13302 7.30938 6.24154 6.76381C6.35006 6.21824 6.61793 5.7171 7.01126 5.32376C7.4046 4.93043 7.90574 4.66256 8.45131 4.55404C8.99688 4.44552 9.56238 4.50122 10.0763 4.71409C10.5902 4.92696 11.0295 5.28745 11.3385 5.74996C11.6476 6.21247 11.8125 6.75624 11.8125 7.3125C11.8116 8.05815 11.515 8.773 10.9878 9.30025C10.4605 9.82751 9.74565 10.1241 9 10.125ZM9 5.625C8.66625 5.625 8.33998 5.72397 8.06248 5.9094C7.78497 6.09482 7.56868 6.35837 7.44095 6.66672C7.31323 6.97507 7.27981 7.31437 7.34493 7.64172C7.41004 7.96906 7.57076 8.26974 7.80676 8.50574C8.04276 8.74175 8.34344 8.90246 8.67079 8.96758C8.99813 9.03269 9.33743 8.99927 9.64578 8.87155C9.95413 8.74383 10.2177 8.52753 10.4031 8.25003C10.5885 7.97252 10.6875 7.64626 10.6875 7.3125C10.6871 6.86509 10.5091 6.43612 10.1928 6.11975C9.87638 5.80338 9.44742 5.62545 9 5.625Z" fill="white" />
+														<path d="M9.00001 16.875L4.25476 11.2787C4.18882 11.1947 4.12357 11.1101 4.05901 11.025C3.24843 9.95725 2.81054 8.65306 2.81251 7.3125C2.81251 5.67147 3.4644 4.09766 4.62478 2.93728C5.78516 1.7769 7.35898 1.125 9.00001 1.125C10.641 1.125 12.2148 1.7769 13.3752 2.93728C14.5356 4.09766 15.1875 5.67147 15.1875 7.3125C15.1895 8.65245 14.7518 9.95605 13.9416 11.0233L13.941 11.025C13.941 11.025 13.7723 11.2466 13.7469 11.2764L9.00001 16.875ZM4.95732 10.3472C4.95732 10.3472 5.08838 10.5204 5.11819 10.5576L9.00001 15.1358L12.8869 10.5514C12.9116 10.5204 13.0433 10.3461 13.0438 10.3455C13.706 9.47313 14.0638 8.4077 14.0625 7.3125C14.0625 5.96984 13.5291 4.68217 12.5797 3.73277C11.6303 2.78337 10.3427 2.25 9.00001 2.25C7.65735 2.25 6.36968 2.78337 5.42028 3.73277C4.47088 4.68217 3.93751 5.96984 3.93751 7.3125C3.93633 8.40838 4.29457 9.47442 4.95732 10.3472Z" fill="white" />
+													</svg>
+													<span>Найти на карте</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="body-hero__slide swiper-slide">
+										<div class="body-hero__label">набережные челны</div>
+										<div class="body-hero__locations">
+											<div class="body-hero__location">
+												<div class="body-hero__topic">г. Набережные Челны, ул. 40 Лет Победы, 37</div>
+												<a href="#" class="body-hero__link">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 10.125C8.44374 10.125 7.89997 9.96005 7.43746 9.65101C6.97495 9.34197 6.61446 8.90272 6.40159 8.3888C6.18872 7.87488 6.13302 7.30938 6.24154 6.76381C6.35006 6.21824 6.61793 5.7171 7.01126 5.32376C7.4046 4.93043 7.90574 4.66256 8.45131 4.55404C8.99688 4.44552 9.56238 4.50122 10.0763 4.71409C10.5902 4.92696 11.0295 5.28745 11.3385 5.74996C11.6476 6.21247 11.8125 6.75624 11.8125 7.3125C11.8116 8.05815 11.515 8.773 10.9878 9.30025C10.4605 9.82751 9.74565 10.1241 9 10.125ZM9 5.625C8.66625 5.625 8.33998 5.72397 8.06248 5.9094C7.78497 6.09482 7.56868 6.35837 7.44095 6.66672C7.31323 6.97507 7.27981 7.31437 7.34493 7.64172C7.41004 7.96906 7.57076 8.26974 7.80676 8.50574C8.04276 8.74175 8.34344 8.90246 8.67079 8.96758C8.99813 9.03269 9.33743 8.99927 9.64578 8.87155C9.95413 8.74383 10.2177 8.52753 10.4031 8.25003C10.5885 7.97252 10.6875 7.64626 10.6875 7.3125C10.6871 6.86509 10.5091 6.43612 10.1928 6.11975C9.87638 5.80338 9.44742 5.62545 9 5.625Z" fill="white" />
+														<path d="M9.00001 16.875L4.25476 11.2787C4.18882 11.1947 4.12357 11.1101 4.05901 11.025C3.24843 9.95725 2.81054 8.65306 2.81251 7.3125C2.81251 5.67147 3.4644 4.09766 4.62478 2.93728C5.78516 1.7769 7.35898 1.125 9.00001 1.125C10.641 1.125 12.2148 1.7769 13.3752 2.93728C14.5356 4.09766 15.1875 5.67147 15.1875 7.3125C15.1895 8.65245 14.7518 9.95605 13.9416 11.0233L13.941 11.025C13.941 11.025 13.7723 11.2466 13.7469 11.2764L9.00001 16.875ZM4.95732 10.3472C4.95732 10.3472 5.08838 10.5204 5.11819 10.5576L9.00001 15.1358L12.8869 10.5514C12.9116 10.5204 13.0433 10.3461 13.0438 10.3455C13.706 9.47313 14.0638 8.4077 14.0625 7.3125C14.0625 5.96984 13.5291 4.68217 12.5797 3.73277C11.6303 2.78337 10.3427 2.25 9.00001 2.25C7.65735 2.25 6.36968 2.78337 5.42028 3.73277C4.47088 4.68217 3.93751 5.96984 3.93751 7.3125C3.93633 8.40838 4.29457 9.47442 4.95732 10.3472Z" fill="white" />
+													</svg>
+													<span>Найти на карте</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="events-block">
+				<div class="events-block__slider swiper">
+					<div class="events-block__wrapper swiper-wrapper">
+						<div class="events-block__slide swiper-slide">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="location-info">
+				<div class="location-info__container location-info__container_wide">
+					<div class="location-info__content">
+						<div data-da=".location-info__slider_front, 1085,last" class="location-info__pagination">
+							<div class="swiper-pagination swiper-pagination_front"></div>
+						</div>
+
+						<div class="location-info__title">набережные челны</div>
+						<div class="location-info__detail-info">
+							<ul class="location-info__address-list">
+								<li>
+									<a href="#">ул. 40 лет Победы, 37</a>
+									<span>Пн-Вс 08:00—23:00</span>
+								</li>
+							</ul>
+						</div>
+						<div data-da=".location-info__slider_front, 479.98,last" class="location-info__cta">
+							<a href="#" class="location-info__button button button_transparent">Перейти</a>
+						</div>
+					</div>
+					<div class="location-info__slider location-info__slider_front swiper">
+						<div class="location-info__wrapper swiper-wrapper">
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">батутная арена</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/01.webp" type="image/webp"><img src="img/location-block/1/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												батутная арена
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Более 30 батутов для детей и взрослых
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">бластер-арена</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/02.webp" type="image/webp"><img src="img/location-block/1/02.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												бластер-арена
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Пистолеты с поролоновыми пулями, разнообразные препятствия и укрытия, очки для
+													защиты глаз. Идеальное место для
+													проведения детских соревнований и развлечений!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">веревочный парк</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												веревочный парк
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Зона с укрытиями и игровыми пушками, где Вы можете сразиться со своими друзьями
+													и выяснить, кто из вас самый меткий
+													стрелок!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">сухой бассейн</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/03.webp" type="image/webp"><img src="img/location-block/1/03.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												сухой басейн
+											</div>
+											<ul class="slide-location__list-info">
+												<li>33 000 шариков в бассейне</li>
+												<li>безопасная для детей зона, огражденная сеткой</li>
+												<li>под бассейном надувная подушка</li>
+												<li>в этой зоне мягкий пол и стенки</li>
+											</ul>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">зона отдыха</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/04.webp" type="image/webp"><img src="img/location-block/1/04.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												зона отдыха
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Play Station 5 и телевизор с диагональю 65 дюймов, удобные пуфики, бильярд Pool,
+													Кикер - настольный футбол, игровой
+													автомат с ретро играми, зона для посетителей - можно пить кофе и следить за
+													детьми. Доступ к зоне отдыха включен в любой
+													билет!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">кафе</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/05.webp" type="image/webp"><img src="img/location-block/1/05.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												кафе
+											</div>
+											<div class="slide-location__text">
+												<p>
+													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
+													компанию.
+												</p>
+												<p>
+													2 индивидуальные комнаты для проведения мероприятий.
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">день рождения</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/06.webp" type="image/webp"><img src="img/location-block/1/06.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												день рождения
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Программа включает в себя:
+												</p>
+											</div>
+											<ul class="slide-location__list-info">
+												<li>33 000 шариков в бассейне</li>
+												<li>безопасная для детей зона, огражденная сеткой</li>
+												<li>под бассейном надувная подушка</li>
+												<li>в этой зоне мягкий пол и стенки</li>
+											</ul>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="location-info location-info_reverse">
+				<div class="location-info__container location-info__container_wide">
+					<div class="location-info__content">
+
+						<div data-da=".location-info__slider_reverse, 1085,last" class="location-info__pagination">
+							<div class="swiper-pagination swiper-pagination_reverse"></div>
+						</div>
+						<div class="location-info__title">Москва</div>
+						<div class="location-info__detail-info">
+							<ul class="location-info__address-list">
+								<li>
+									<a href="#">пр-т Маршала Жукова, 4</a>
+									<span>Пн-Вс 12:00—23:00</span>
+								</li>
+								<li>
+									<a href="#">Кутузовский пр-т, 36, стр.6</a>
+									<span>Пн-Вс 12:00—23:00</span>
+								</li>
+								<li>
+									<a href="#">ул. Смирновская, 25, стр. 1</a>
+									<span>Пн-Пт 12:00—22:00 / Сб-Вс, праздничные дни и дни школьных каникул 9:00—22:00</span>
+								</li>
+							</ul>
+						</div>
+						<div data-da=".location-info__slider_reverse, 479.98,last" class="location-info__cta">
+							<a href="#" class="location-info__button button button_transparent">Перейти</a>
+						</div>
+					</div>
+					<div class="location-info__slider location-info__slider_reverse swiper">
+						<div class="location-info__wrapper swiper-wrapper">
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">Веревочный парк</div>
+											<span class="slide-location__count">9</span>
+											<div class="slide-location__info">
+												<span>препядствий</span>
+												<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.7647 6.66535C15.7647 7.36417 15.1983 7.93053 14.4996 7.93053C13.8008 7.93053 13.2344 7.36412 13.2344 6.66535C13.2344 5.96676 13.8008 5.40039 14.4996 5.40039C15.1983 5.40039 15.7647 5.9668 15.7647 6.66535Z" fill="white" />
+													<path d="M17.8613 20.1563C16.5676 20.6732 15.7651 21.5806 15.7651 20.4417L15.7649 10.7164C15.7649 9.406 14.4336 9.04591 13.2347 9.80538C12.0269 10.5705 11.507 11.5232 10.7727 12.3079C10.6639 12.4221 10.6488 12.5967 10.7367 12.7278C10.8244 12.859 10.9914 12.9118 11.1386 12.855C12.4323 12.338 13.2347 11.4306 13.2347 12.5695L13.235 22.2949C13.235 23.6053 14.5663 23.9653 15.7652 23.2059C16.973 22.4408 17.4929 21.488 18.2272 20.7034C18.336 20.589 18.3509 20.4145 18.2632 20.2833C18.1755 20.1522 18.0085 20.0994 17.8613 20.1563Z" fill="white" />
+													<path d="M14.5 5.75082e-05C10.6542 5.75082e-05 6.96629 1.5278 4.24695 4.24701C1.52774 6.96623 0 10.6546 0 14.5C0 18.3454 1.52774 22.0337 4.24695 24.753C6.96617 27.4723 10.6546 29 14.5 29C18.3454 29 22.0337 27.4723 24.753 24.753C27.4722 22.0338 28.9999 18.3454 28.9999 14.5C28.9999 11.9548 28.3299 9.45431 27.0573 7.25001C25.7847 5.04572 23.9542 3.21527 21.7499 1.94266C19.5456 0.670051 17.0451 0 14.4999 0L14.5 5.75082e-05ZM14.5 26.7446C11.2525 26.7446 8.1378 25.4544 5.84196 23.1582C3.54612 20.862 2.25562 17.7475 2.25562 14.5002C2.25562 11.2529 3.54577 8.13803 5.84196 5.84219C8.13814 3.54635 11.2527 2.25585 14.5 2.25585C17.7472 2.25585 20.8621 3.54601 23.158 5.84219C25.4538 8.13837 26.7443 11.2529 26.7443 14.5002C26.7405 17.7465 25.4494 20.8589 23.154 23.1542C20.8584 25.4497 17.7461 26.7408 14.5 26.7446Z" fill="white" />
+												</svg>
+											</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												Кафе и залыдля мероприятий
+											</div>
+											<div class="slide-location__text">
+												<p>
+													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
+													компанию.
+												</p>
+												<p>
+													2 индивидуальные комнаты для проведения детских мероприятий.
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">Веревочный парк</div>
+											<span class="slide-location__count">9</span>
+											<div class="slide-location__info">
+												<span>препядствий</span>
+												<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.7647 6.66535C15.7647 7.36417 15.1983 7.93053 14.4996 7.93053C13.8008 7.93053 13.2344 7.36412 13.2344 6.66535C13.2344 5.96676 13.8008 5.40039 14.4996 5.40039C15.1983 5.40039 15.7647 5.9668 15.7647 6.66535Z" fill="white" />
+													<path d="M17.8613 20.1563C16.5676 20.6732 15.7651 21.5806 15.7651 20.4417L15.7649 10.7164C15.7649 9.406 14.4336 9.04591 13.2347 9.80538C12.0269 10.5705 11.507 11.5232 10.7727 12.3079C10.6639 12.4221 10.6488 12.5967 10.7367 12.7278C10.8244 12.859 10.9914 12.9118 11.1386 12.855C12.4323 12.338 13.2347 11.4306 13.2347 12.5695L13.235 22.2949C13.235 23.6053 14.5663 23.9653 15.7652 23.2059C16.973 22.4408 17.4929 21.488 18.2272 20.7034C18.336 20.589 18.3509 20.4145 18.2632 20.2833C18.1755 20.1522 18.0085 20.0994 17.8613 20.1563Z" fill="white" />
+													<path d="M14.5 5.75082e-05C10.6542 5.75082e-05 6.96629 1.5278 4.24695 4.24701C1.52774 6.96623 0 10.6546 0 14.5C0 18.3454 1.52774 22.0337 4.24695 24.753C6.96617 27.4723 10.6546 29 14.5 29C18.3454 29 22.0337 27.4723 24.753 24.753C27.4722 22.0338 28.9999 18.3454 28.9999 14.5C28.9999 11.9548 28.3299 9.45431 27.0573 7.25001C25.7847 5.04572 23.9542 3.21527 21.7499 1.94266C19.5456 0.670051 17.0451 0 14.4999 0L14.5 5.75082e-05ZM14.5 26.7446C11.2525 26.7446 8.1378 25.4544 5.84196 23.1582C3.54612 20.862 2.25562 17.7475 2.25562 14.5002C2.25562 11.2529 3.54577 8.13803 5.84196 5.84219C8.13814 3.54635 11.2527 2.25585 14.5 2.25585C17.7472 2.25585 20.8621 3.54601 23.158 5.84219C25.4538 8.13837 26.7443 11.2529 26.7443 14.5002C26.7405 17.7465 25.4494 20.8589 23.154 23.1542C20.8584 25.4497 17.7461 26.7408 14.5 26.7446Z" fill="white" />
+												</svg>
+											</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												Кафе и залыдля мероприятий
+											</div>
+											<div class="slide-location__text">
+												<p>
+													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
+													компанию.
+												</p>
+												<p>
+													2 индивидуальные комнаты для проведения детских мероприятий.
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">Веревочный парк</div>
+											<span class="slide-location__count">9</span>
+											<div class="slide-location__info">
+												<span>препядствий</span>
+												<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.7647 6.66535C15.7647 7.36417 15.1983 7.93053 14.4996 7.93053C13.8008 7.93053 13.2344 7.36412 13.2344 6.66535C13.2344 5.96676 13.8008 5.40039 14.4996 5.40039C15.1983 5.40039 15.7647 5.9668 15.7647 6.66535Z" fill="white" />
+													<path d="M17.8613 20.1563C16.5676 20.6732 15.7651 21.5806 15.7651 20.4417L15.7649 10.7164C15.7649 9.406 14.4336 9.04591 13.2347 9.80538C12.0269 10.5705 11.507 11.5232 10.7727 12.3079C10.6639 12.4221 10.6488 12.5967 10.7367 12.7278C10.8244 12.859 10.9914 12.9118 11.1386 12.855C12.4323 12.338 13.2347 11.4306 13.2347 12.5695L13.235 22.2949C13.235 23.6053 14.5663 23.9653 15.7652 23.2059C16.973 22.4408 17.4929 21.488 18.2272 20.7034C18.336 20.589 18.3509 20.4145 18.2632 20.2833C18.1755 20.1522 18.0085 20.0994 17.8613 20.1563Z" fill="white" />
+													<path d="M14.5 5.75082e-05C10.6542 5.75082e-05 6.96629 1.5278 4.24695 4.24701C1.52774 6.96623 0 10.6546 0 14.5C0 18.3454 1.52774 22.0337 4.24695 24.753C6.96617 27.4723 10.6546 29 14.5 29C18.3454 29 22.0337 27.4723 24.753 24.753C27.4722 22.0338 28.9999 18.3454 28.9999 14.5C28.9999 11.9548 28.3299 9.45431 27.0573 7.25001C25.7847 5.04572 23.9542 3.21527 21.7499 1.94266C19.5456 0.670051 17.0451 0 14.4999 0L14.5 5.75082e-05ZM14.5 26.7446C11.2525 26.7446 8.1378 25.4544 5.84196 23.1582C3.54612 20.862 2.25562 17.7475 2.25562 14.5002C2.25562 11.2529 3.54577 8.13803 5.84196 5.84219C8.13814 3.54635 11.2527 2.25585 14.5 2.25585C17.7472 2.25585 20.8621 3.54601 23.158 5.84219C25.4538 8.13837 26.7443 11.2529 26.7443 14.5002C26.7405 17.7465 25.4494 20.8589 23.154 23.1542C20.8584 25.4497 17.7461 26.7408 14.5 26.7446Z" fill="white" />
+												</svg>
+											</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												Кафе и залыдля мероприятий
+											</div>
+											<div class="slide-location__text">
+												<p>
+													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
+													компанию.
+												</p>
+												<p>
+													2 индивидуальные комнаты для проведения детских мероприятий.
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="offers">
+				<div class="offers__container">
+					<div class="offers__wrapper">
+						<div class="offers__header">
+							<h2 class="offers__subtitle subtitle subtitle_black">наши предложения</h2>
+							<a href="#" class="offers__merch merch">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.168 10.5L21.668 3M21.668 3H16.668M21.668 3V8M21.668 14V19C21.668 19.5304 21.4573 20.0391 21.0822 20.4142C20.7071 20.7893 20.1984 21 19.668 21H5.66797C5.13754 21 4.62883 20.7893 4.25376 20.4142C3.87868 20.0391 3.66797 19.5304 3.66797 19V5C3.66797 4.46957 3.87868 3.96086 4.25376 3.58579C4.62883 3.21071 5.13754 3 5.66797 3H10.668" stroke="#F44336" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+								</svg>
+								<span>мерч</span>
+							</a>
+						</div>
+						<!-- Custom select -->
+						<form action="#" class="offers__form">
+							<div class="offers__select">
+								<div class="offers__label">Город</div>
+								<select name="form[]" class="form">
+									<option value="1" selected>Москва</option>
+									<option value="2">Набережные Челны</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="offers__select">
+								<div class="offers__label">Филиал</div>
+								<select name="form[]" class="form">
+									<option value="1" selected>ул. Смирновская, 25, стр. 1</option>
+									<option value="2">ул. Смирновская, 25, стр. 1</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+						</form>
+						<!-- Custom select -->
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">Разовое посещения</button>
+								<button type="button" class="tabs__title">Услуги</button>
+								<button type="button" class="tabs__title">Дни рождения</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<div class="tabs__label">Опции</div>
+									<div data-tabs class="subtab">
+										<nav data-tabs-titles class="subtab__navigation">
+											<button type="button" class="subtab__title _tab-active">Одна зона</button>
+											<button type="button" class="subtab__title">Две зоны</button>
+											<button type="button" class="subtab__title">Бластер-арена</button>
+										</nav>
+										<div data-tabs-body class="subtab__content">
+											<div class="subtab__body">
+												<div class="subtab__header-block">
+													<div class="subtab__label">Что подразумевает?</div>
+													<p>Для посещения можно выбрать одну зону из представленных</p>
+												</div>
+												<div data-mobile="false" class="subtab__slider swiper">
+													<div class="subtab__wrapper swiper-wrapper">
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/01.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Батут-арена</div>
+																	<p class="card-radio__text">Более 40 батутов, 8 наклонных</p>
+																</div>
+															</label>
+														</div>
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/02.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Верёвочный парк</div>
+																	<p class="card-radio__text">Трасса
+																		веревочного парка состоит из 15
+																		различных ловушек и
+																		препятствий.</p>
+																</div>
+															</label>
+														</div>
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/03.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Полоса препятствий</div>
+																	<p class="card-radio__text">
+																		Уникальная механизированная
+																		полоса препятствий 70 метров
+																		длинной и 11 препятствиями
+																	</p>
+																</div>
+															</label>
+														</div>
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/04.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Бластер-арена</div>
+																	<p class="card-radio__text">
+																		Пистолеты с поролоновыми
+																		пулями, разнообразные
+																		препятствия и укрытия, очки
+																		для защиты глаз.
+																	</p>
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="subtab__tickets tickets-subtab">
+													<ul class="tickets-subtab__header">
+														<li>День недели</li>
+														<li>Продолжительность</li>
+														<li>Цена</li>
+														<li>Количество билетов</li>
+													</ul>
+													<div class="tickets-subtab__body">
+														<div class="tickets-subtab__items">
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Будний день</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span>2 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>1 250 ₽</span>
+																</div>
+																<div data-quantity class="tickets-subtab___quantity quantity">
+
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</div>
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Выходной</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span>2 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>1 700 ₽</span>
+																</div>
+																<div data-quantity class="tickets-subtab___quantity quantity">
+
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</div>
+														</div>
+														<div class="tickets-subtab__footer">
+															<p class="tickets-subtab__message">*Цена указана с НДС и без дополнительных
+																стоимостей за услугу</p>
+															<a href="#" class="tickets-subtab__shopping-card shopping-card">
+																<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
+																	<path d="M5.10845 3.69083L4.35159 0.700195H0.599609V1.93861H3.3198L5.58836 10.9V10.8999C5.22941 11.285 5.04196 11.7866 5.06506 12.2995C5.08816 12.8125 5.32024 13.297 5.71266 13.6518C6.10508 14.0064 6.62728 14.2036 7.1699 14.2022H19.1021V12.9638H7.16757C6.88302 12.9638 6.62023 12.8202 6.47798 12.5871C6.33571 12.3541 6.33571 12.067 6.47798 11.8339C6.62024 11.6008 6.88301 11.4571 7.16757 11.4571H18.9731L20.9996 3.69057L5.10845 3.69083ZM17.9482 10.219H6.76202L5.42269 4.92917H19.329L17.9482 10.219Z" fill="#F44336" />
+																	<path d="M7.18973 19.3002C7.79429 19.3002 8.37414 19.073 8.80158 18.6685C9.22917 18.264 9.46928 17.7154 9.46928 17.1434C9.46928 16.5714 9.22917 16.0228 8.80158 15.6184C8.37414 15.2138 7.79429 14.9866 7.18973 14.9866C6.58518 14.9866 6.00532 15.2138 5.57788 15.6184C5.15029 16.0228 4.91018 16.5714 4.91018 17.1434C4.91125 17.7151 5.15181 18.263 5.57909 18.6673C6.00636 19.0716 6.58549 19.2991 7.18973 19.3002ZM7.18973 16.2229C7.44704 16.2229 7.69383 16.3197 7.87582 16.4917C8.0578 16.6637 8.1602 16.8973 8.16036 17.1407C8.16066 17.3841 8.05856 17.6176 7.87688 17.79C7.6952 17.9624 7.44855 18.0595 7.19111 18.0598C6.9338 18.0602 6.68686 17.9639 6.50456 17.792C6.32227 17.6201 6.21956 17.3869 6.21895 17.1434C6.21895 16.8997 6.3212 16.6657 6.50319 16.4932C6.68518 16.3206 6.93214 16.2234 7.18974 16.2229L7.18973 16.2229Z" fill="#F44336" />
+																</svg>
+																<span>Перейти в корзину</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="subtab__body">
+												Содержимое второго таба
+											</div>
+											<div class="subtab__body">
+												Содержимое третьего таба
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="subtab__body">
+									Содержимое второго таба
+								</div>
+								<div class="subtab__body">
+									Содержимое третьего таба
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__items">
+					<div class="footer__item">
+						<div class="footer__inner">
+							<div class="footer__logo logo">
+								<a href="#" class="logo__link">
+									<img src="img/logo/doaflip-logo.svg" alt="icon: Doaflip">
+								</a>
+								<p class="logo__text">
+									Федеральная сеть <br> спортивно-развлекательных центров
+								</p>
+							</div>
+							<div class="footer__actions">
+								<a class="footer__button button button_italic button_icon button_white" href="#">Выбрать центр</a>
+								<a class="footer__button button button_italic button_red" href="#">Обратный звонок</a>
+							</div>
+						</div>
+						<nav data-da=".footer__container,767.98,last" class="footer__navigation navigation-footer">
+							<ul class="navigation-footer__list">
+								<li><a href="#">Магазин</a></li>
+								<li><a href="#">Политика конфиденциальности</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__wrapper">
+						<div class="footer__address-block address-block">
+							<div class="address-block__item">
+								<div class="address-block__label">Москва</div>
+								<ul class="address-block__list">
+									<li><a href="#">пр-т Маршала Жукова, 4</a></li>
+									<li><a href="#">Кутузовский пр-т, 36, стр.6</a></li>
+									<li><a href="#">ул. Смирновская, 25, стр. 1</a></li>
+								</ul>
+							</div>
+							<div class="address-block__item">
+								<div class="address-block__label">Набережные Челны</div>
+								<ul class="address-block__list">
+									<li><a href="#">ул. 40 лет Победы, 37</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__contacts">
+							<div class="footer__label">контакты</div>
+							<ul class="footer__list">
+								<li><a class="footer__callback" href="tel:79957701668">+7 (995) 770-16-68</a></li>
+								<li><a class="footer__mail" href="mailto:info@doaflip">info@doaflip</a></li>
+							</ul>
+							<ul class="footer__social social social_footer">
+								<li>
+									<a href="#">
+										<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.317173 7.90761C2.46554 6.75094 4.86369 5.78553 7.1044 4.81521C10.9593 3.22589 14.8295 1.66412 18.7388 0.210134C19.4994 -0.0375962 20.866 -0.279833 21 0.821879C20.9266 2.3814 20.6247 3.9318 20.4177 5.48219C19.8922 8.89164 19.2848 12.2894 18.6925 15.6877C18.4884 16.8196 17.0377 17.4056 16.1095 16.6812C13.8787 15.2084 11.6308 13.7498 9.42856 12.2429C8.70716 11.5264 9.37612 10.4974 10.0204 9.98575C11.8577 8.21591 13.8062 6.71222 15.5475 4.85091C16.0172 3.74225 14.6294 4.67659 14.1716 4.9629C11.6563 6.65715 9.20256 8.45484 6.55064 9.94386C5.19605 10.6727 3.61724 10.0499 2.26326 9.64317C1.04927 9.15185 -0.729718 8.65686 0.317051 7.90775L0.317173 7.90761Z" fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8093 23.4302H11.8045C9.84448 23.4295 7.91861 22.9377 6.20812 22.0047L0 23.6332L1.6614 17.5648C0.636566 15.7887 0.0973057 13.7741 0.0981845 11.7101C0.100754 5.25322 5.35426 0 11.8092 0C14.942 0.00135208 17.8823 1.22094 20.0933 3.43454C22.3044 5.64803 23.5214 8.5903 23.5201 11.7194C23.5175 18.1748 18.2661 23.4275 11.8093 23.4302ZM6.49648 19.8852L6.85191 20.0961C8.34637 20.983 10.0595 21.4522 11.8061 21.4529H11.81C17.1749 21.4529 21.5414 17.0863 21.5435 11.7192C21.5445 9.11836 20.5331 6.67287 18.6953 4.83301C16.8576 2.99315 14.4137 1.97942 11.8139 1.97852C6.44483 1.97852 2.0783 6.34465 2.07617 11.7113C2.07542 13.5505 2.59002 15.3417 3.56438 16.8914L3.79581 17.2597L2.8125 20.8516L6.49648 19.8852ZM17.3091 14.2415C17.5132 14.3401 17.651 14.4067 17.7099 14.5049C17.783 14.6269 17.783 15.2128 17.5393 15.8964C17.2953 16.5799 16.1263 17.2038 15.5641 17.2877C15.06 17.3631 14.422 17.3946 13.7211 17.1718C13.2961 17.0369 12.7511 16.8569 12.0529 16.5554C9.3097 15.3709 7.45585 12.7121 7.10548 12.2096C7.08094 12.1744 7.06377 12.1498 7.0542 12.137L7.05184 12.1339C6.89698 11.9273 5.85938 10.5428 5.85938 9.11002C5.85938 7.76216 6.52147 7.05568 6.82623 6.73048C6.84711 6.7082 6.86631 6.68771 6.88351 6.66893C7.15172 6.37597 7.46875 6.30273 7.66381 6.30273C7.85886 6.30273 8.05415 6.30454 8.22464 6.3131C8.24567 6.31416 8.26756 6.31403 8.29018 6.3139C8.4607 6.3129 8.67329 6.31165 8.88301 6.8154C8.96369 7.00928 9.08175 7.29671 9.20627 7.59985C9.45806 8.21284 9.73625 8.8901 9.78519 8.9881C9.85836 9.13458 9.90711 9.3054 9.80958 9.50077C9.79494 9.53006 9.7814 9.55771 9.76847 9.58412C9.69521 9.73368 9.64132 9.8437 9.51698 9.98888C9.46809 10.046 9.41755 10.1075 9.36702 10.169C9.26636 10.2916 9.1657 10.4142 9.07804 10.5015C8.93156 10.6475 8.77906 10.8058 8.94975 11.0987C9.12044 11.3917 9.7077 12.3499 10.5776 13.1258C11.5127 13.9599 12.3254 14.3124 12.7374 14.4911C12.8178 14.526 12.883 14.5542 12.9308 14.5782C13.2233 14.7247 13.394 14.7002 13.5647 14.5049C13.7354 14.3096 14.2962 13.6505 14.4912 13.3576C14.6862 13.0647 14.8814 13.1135 15.1496 13.2111C15.4178 13.3089 16.8565 14.0167 17.1491 14.1631C17.2062 14.1917 17.2596 14.2175 17.3091 14.2415Z" fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4352 0.902134C23.6132 0.393237 23.4352 0.0231313 22.6473 0.0231313H20.0292C19.3684 0.0231313 19.0634 0.346975 18.8854 0.69395C18.8854 0.69395 17.5383 3.6548 15.6574 5.57473C15.0474 6.12989 14.7678 6.31495 14.4373 6.31495C14.2594 6.31495 14.0306 6.12989 14.0306 5.621V0.879003C14.0306 0.277579 13.8273 0 13.2681 0H9.15042C8.74373 0 8.48956 0.277579 8.48956 0.555159C8.48956 1.13345 9.43001 1.27224 9.53168 2.89146V6.40747C9.53168 7.17082 9.37918 7.30961 9.04875 7.30961C8.15912 7.30961 5.99861 4.32562 4.7023 0.925267C4.44812 0.254448 4.19394 0 3.53308 0H0.889624C0.127089 0 0 0.323842 0 0.670817C0 1.29537 0.889625 4.44128 4.14311 8.60498C6.30362 11.4502 9.37918 12.9769 12.1497 12.9769C13.8273 12.9769 14.0306 12.6299 14.0306 12.0516V9.90036C14.0306 9.20641 14.1831 9.09075 14.7169 9.09075C15.0982 9.09075 15.7845 9.2758 17.335 10.6406C19.1142 12.2598 19.4192 13 20.4105 13H23.0286C23.7911 13 24.1469 12.653 23.9436 11.9822C23.7148 11.3114 22.8506 10.3399 21.7322 9.18327C21.1222 8.53559 20.2072 7.81851 19.9276 7.47153C19.5463 7.0089 19.648 6.82384 19.9276 6.40747C19.9022 6.40747 23.1048 2.29003 23.4352 0.902134Z" fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C13.026 0 14.0784 0.0264001 15.0984 0.0696001L16.3032 0.1272L17.4564 0.1956L18.5364 0.2688L19.5228 0.3456C20.5933 0.427533 21.6005 0.884336 22.3674 1.63565C23.1343 2.38696 23.6117 3.38465 23.7156 4.4532L23.7636 4.9632L23.8536 6.0552C23.9376 7.1868 24 8.4204 24 9.6C24 10.7796 23.9376 12.0132 23.8536 13.1448L23.7636 14.2368C23.748 14.412 23.7324 14.5812 23.7156 14.7468C23.6117 15.8155 23.1341 16.8134 22.367 17.5647C21.5998 18.3161 20.5923 18.7727 19.5216 18.8544L18.5376 18.93L17.4576 19.0044L16.3032 19.0728L15.0984 19.1304C14.0662 19.1753 13.0332 19.1985 12 19.2C10.9668 19.1985 9.9338 19.1753 8.9016 19.1304L7.6968 19.0728L6.5436 19.0044L5.4636 18.93L4.4772 18.8544C3.40674 18.7725 2.39946 18.3157 1.63257 17.5644C0.865672 16.813 0.388289 15.8154 0.2844 14.7468L0.2364 14.2368L0.1464 13.1448C0.0546451 11.9654 0.00581282 10.783 0 9.6C0 8.4204 0.0624 7.1868 0.1464 6.0552L0.2364 4.9632C0.252 4.788 0.2676 4.6188 0.2844 4.4532C0.388249 3.38484 0.86546 2.3873 1.63211 1.63601C2.39876 0.884726 3.40575 0.427803 4.476 0.3456L5.4612 0.2688L6.5412 0.1956L7.6956 0.1272L8.9004 0.0696001C9.933 0.0247595 10.9664 0.00155434 12 0ZM9.6 6.69V12.51C9.6 13.0644 10.2 13.41 10.68 13.134L15.72 10.224C15.8297 10.1609 15.9208 10.07 15.9841 9.9604C16.0475 9.85085 16.0808 9.72654 16.0808 9.6C16.0808 9.47346 16.0475 9.34915 15.9841 9.2396C15.9208 9.13005 15.8297 9.03913 15.72 8.976L10.68 6.0672C10.5705 6.00399 10.4463 5.97072 10.3199 5.97074C10.1935 5.97076 10.0693 6.00407 9.9598 6.06732C9.85033 6.13056 9.75945 6.22152 9.69629 6.33104C9.63313 6.44056 9.59992 6.56477 9.6 6.6912V6.69Z" fill="white" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__actions">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close-icon.svg" alt="">
+				</button>
+			</div>
+			<div class="popup__title">Контактные данные</div>
+			<p class="popup__text">Введите свои данные для покупки билета, наш менеджер свяжется с вами для уточнения деталей покупки</p>
+			<form action="#" class="popup__form form-popup">
+				<div class="form-popup__lines">
+					<div class="form-popup__line">
+						<label for="userphone" class="form-popup__label">Телефон</label>
+						<input id="userphone" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите телефон..." class="form-popup__input">
+					</div>
+					<div class="form-popup__line">
+						<label for="userinfo" class="form-popup__label">ФИО</label>
+						<input id="userinfo" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите ФИО..." class="form-popup__input">
+					</div>
+				</div>
+				<button type="submit" class="form-popup__button">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20240429044344"></script>
+
+</body>
+
+</html>

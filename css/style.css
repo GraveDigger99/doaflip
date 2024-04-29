@@ -344,6 +344,13 @@ h6 {
           align-items: center;
 }
 
+.select__content {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .select._select-open {
   z-index: 5;
 }
@@ -660,30 +667,21 @@ h6 {
     border-left: 0;
     content: "";
     display: block;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 0.6875rem;
+    height: 0.6875rem;
     border-radius: 50%;
     background-color: var(--red-color);
-    top: 50%;
-    left: 50%;
+    top: 4px;
+    left: 4px;
     position: absolute;
-    -webkit-transform-origin: top left;
-        -ms-transform-origin: top left;
-            transform-origin: top left;
-    -webkit-transform: scale(0) translate(-50%, -50%);
-        -ms-transform: scale(0) translate(-50%, -50%);
-            transform: scale(0) translate(-50%, -50%);
-    -webkit-transition: -webkit-transform 0.5s ease 0s;
-    transition: -webkit-transform 0.5s ease 0s;
-    -o-transition: transform 0.5s ease 0s;
-    transition: transform 0.5s ease 0s;
-    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease 0s;
+    -o-transition: opacity 0.5s ease 0s;
+    transition: opacity 0.5s ease 0s;
   }
 
   .radio:checked::after {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-        -ms-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
   }
 
   .card:hover .radio {
@@ -1803,6 +1801,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.25rem;
+  max-width: 79.625rem;
+  margin: 0 auto;
 }
 
 .offers__header:not(:last-child) {
@@ -1840,6 +1840,10 @@ h6 {
   padding: 0 2rem;
   letter-spacing: -0.03em;
   color: var(--grey-color);
+}
+
+.offers__wrapper {
+  max-width: 79.375rem;
 }
 
 .merch {
@@ -2269,6 +2273,10 @@ h6 {
   .select__option {
     font-size: 1rem;
     padding: 0.5rem 0;
+  }
+
+  .select__content {
+    width: 7.5rem;
   }
 
   .quantity__button {

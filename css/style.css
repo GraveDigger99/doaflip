@@ -914,23 +914,6 @@ h6 {
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--red-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-}
-
-.shopping-card span::before {
-  content: "";
-  width: 0.0625rem;
-  height: 1.5rem;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  background-color: var(--red-color);
 }
 
 .shopping-card svg path {
@@ -1952,6 +1935,26 @@ h6 {
   .quantity {
     margin: 0 auto;
   }
+
+  .shopping-card span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+
+  .shopping-card span::before {
+    content: "";
+    width: 0.0625rem;
+    height: 1.5rem;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    background-color: var(--red-color);
+  }
 }
 
 @media (min-width: 61.99875em) {
@@ -2377,8 +2380,16 @@ h6 {
     padding: 1rem 1.25rem;
   }
 
+  .shopping-card {
+    gap: 0.5rem;
+  }
+
   .shopping-card span {
     font-size: 0.875rem;
+  }
+
+  .shopping-card svg {
+    width: 1rem;
   }
 
   .social {

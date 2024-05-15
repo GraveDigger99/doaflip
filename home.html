@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240429145130">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240515061959">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -53,9 +53,9 @@
 						</li>
 					</ul>
 					<div data-da=".header__container,1110,last" class="header__actions">
-						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Мерч</a>
 						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Услуги</a>
 						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Праздники</a>
+						<a class="button button_small-mobile button_italic button_black button_only-mobile" href="#">Мерч</a>
 						<a class="button button_small-mobile button_italic button_white button_no-mobile" href="#">Магазин</a>
 						<a class="button button_small-mobile button_italic button_icon button_white button_no-mobile" href="#">Выбрать центр</a>
 						<a class="button button_small-mobile button_italic button_red button_callback" href="#">Обратный звонок</a>
@@ -72,7 +72,7 @@
 				<div class="hero__container hero__container_wide">
 					<div class="hero__wrapper">
 						<div class="hero__top top-hero">
-							<div data-da=".hero, 767.98,first" class="main-logo">
+							<div class="main-logo">
 								<div class="main-logo__container">
 									<div class="main-logo__icon">
 										<img src="img/logo/doaflip-logo.svg" alt="icon: Doaflip">
@@ -148,16 +148,259 @@
 					</div>
 				</div>
 			</section>
-			<!-- <div class="events-block">
-				<div class="events-block__slider swiper">
-					<div class="events-block__wrapper swiper-wrapper">
-						<div class="events-block__slide swiper-slide">
-							
+			<div class="location-info">
+				<div class="location-info__container location-info__container_wide">
+					<div class="location-info__content">
+
+						<div data-da=".location-info__slider_reverse, 1085,last" class="location-info__pagination">
+							<div class="swiper-pagination swiper-pagination_reverse"></div>
+						</div>
+						<div class="location-info__title">Москва</div>
+						<div class="location-info__detail-info">
+							<ul class="location-info__address-list">
+								<li>
+									<a href="#">пр-т Маршала Жукова, 4</a>
+									<span>Пн-Вс 12:00—23:00</span>
+								</li>
+								<li>
+									<a href="#">Кутузовский пр-т, 36, стр.6</a>
+									<span>Пн-Вс 12:00—23:00</span>
+								</li>
+								<li>
+									<a href="#">ул. Смирновская, 25, стр. 1</a>
+									<span>Пн-Пт 12:00—22:00 / Сб-Вс, праздничные дни и дни школьных каникул 9:00—22:00</span>
+								</li>
+							</ul>
+						</div>
+						<div data-da=".location-info__slider_reverse, 479.98,last" class="location-info__cta">
+							<a href="#" class="location-info__button button button_transparent">Перейти</a>
+						</div>
+					</div>
+					<div class="location-info__slider location-info__slider_reverse swiper">
+						<div class="location-info__wrapper swiper-wrapper">
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">Веревочный парк</div>
+											<span class="slide-location__count">9</span>
+											<div class="slide-location__info">
+												<span>препядствий</span>
+												<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.7647 6.66535C15.7647 7.36417 15.1983 7.93053 14.4996 7.93053C13.8008 7.93053 13.2344 7.36412 13.2344 6.66535C13.2344 5.96676 13.8008 5.40039 14.4996 5.40039C15.1983 5.40039 15.7647 5.9668 15.7647 6.66535Z" fill="white" />
+													<path d="M17.8613 20.1563C16.5676 20.6732 15.7651 21.5806 15.7651 20.4417L15.7649 10.7164C15.7649 9.406 14.4336 9.04591 13.2347 9.80538C12.0269 10.5705 11.507 11.5232 10.7727 12.3079C10.6639 12.4221 10.6488 12.5967 10.7367 12.7278C10.8244 12.859 10.9914 12.9118 11.1386 12.855C12.4323 12.338 13.2347 11.4306 13.2347 12.5695L13.235 22.2949C13.235 23.6053 14.5663 23.9653 15.7652 23.2059C16.973 22.4408 17.4929 21.488 18.2272 20.7034C18.336 20.589 18.3509 20.4145 18.2632 20.2833C18.1755 20.1522 18.0085 20.0994 17.8613 20.1563Z" fill="white" />
+													<path d="M14.5 5.75082e-05C10.6542 5.75082e-05 6.96629 1.5278 4.24695 4.24701C1.52774 6.96623 0 10.6546 0 14.5C0 18.3454 1.52774 22.0337 4.24695 24.753C6.96617 27.4723 10.6546 29 14.5 29C18.3454 29 22.0337 27.4723 24.753 24.753C27.4722 22.0338 28.9999 18.3454 28.9999 14.5C28.9999 11.9548 28.3299 9.45431 27.0573 7.25001C25.7847 5.04572 23.9542 3.21527 21.7499 1.94266C19.5456 0.670051 17.0451 0 14.4999 0L14.5 5.75082e-05ZM14.5 26.7446C11.2525 26.7446 8.1378 25.4544 5.84196 23.1582C3.54612 20.862 2.25562 17.7475 2.25562 14.5002C2.25562 11.2529 3.54577 8.13803 5.84196 5.84219C8.13814 3.54635 11.2527 2.25585 14.5 2.25585C17.7472 2.25585 20.8621 3.54601 23.158 5.84219C25.4538 8.13837 26.7443 11.2529 26.7443 14.5002C26.7405 17.7465 25.4494 20.8589 23.154 23.1542C20.8584 25.4497 17.7461 26.7408 14.5 26.7446Z" fill="white" />
+												</svg>
+											</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												Кафе и залыдля мероприятий
+											</div>
+											<div class="slide-location__text">
+												<p>
+													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
+													компанию.
+												</p>
+												<p>
+													2 индивидуальные комнаты для проведения детских мероприятий.
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">бластер-арена</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/02.webp" type="image/webp"><img src="img/location-block/1/02.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												бластер-арена
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Пистолеты с поролоновыми пулями, разнообразные препятствия и укрытия, очки для
+													защиты глаз. Идеальное место для
+													проведения детских соревнований и развлечений!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">зона отдыха</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/04.webp" type="image/webp"><img src="img/location-block/1/04.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												зона отдыха
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Play Station 5 и телевизор с диагональю 65 дюймов, удобные пуфики, бильярд Pool,
+													Кикер - настольный футбол, игровой
+													автомат с ретро играми, зона для посетителей - можно пить кофе и следить за
+													детьми. Доступ к зоне отдыха включен в любой
+													билет!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">Веревочный парк</div>
+											<span class="slide-location__count">9</span>
+											<div class="slide-location__info">
+												<span>препядствий</span>
+												<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.7647 6.66535C15.7647 7.36417 15.1983 7.93053 14.4996 7.93053C13.8008 7.93053 13.2344 7.36412 13.2344 6.66535C13.2344 5.96676 13.8008 5.40039 14.4996 5.40039C15.1983 5.40039 15.7647 5.9668 15.7647 6.66535Z" fill="white" />
+													<path d="M17.8613 20.1563C16.5676 20.6732 15.7651 21.5806 15.7651 20.4417L15.7649 10.7164C15.7649 9.406 14.4336 9.04591 13.2347 9.80538C12.0269 10.5705 11.507 11.5232 10.7727 12.3079C10.6639 12.4221 10.6488 12.5967 10.7367 12.7278C10.8244 12.859 10.9914 12.9118 11.1386 12.855C12.4323 12.338 13.2347 11.4306 13.2347 12.5695L13.235 22.2949C13.235 23.6053 14.5663 23.9653 15.7652 23.2059C16.973 22.4408 17.4929 21.488 18.2272 20.7034C18.336 20.589 18.3509 20.4145 18.2632 20.2833C18.1755 20.1522 18.0085 20.0994 17.8613 20.1563Z" fill="white" />
+													<path d="M14.5 5.75082e-05C10.6542 5.75082e-05 6.96629 1.5278 4.24695 4.24701C1.52774 6.96623 0 10.6546 0 14.5C0 18.3454 1.52774 22.0337 4.24695 24.753C6.96617 27.4723 10.6546 29 14.5 29C18.3454 29 22.0337 27.4723 24.753 24.753C27.4722 22.0338 28.9999 18.3454 28.9999 14.5C28.9999 11.9548 28.3299 9.45431 27.0573 7.25001C25.7847 5.04572 23.9542 3.21527 21.7499 1.94266C19.5456 0.670051 17.0451 0 14.4999 0L14.5 5.75082e-05ZM14.5 26.7446C11.2525 26.7446 8.1378 25.4544 5.84196 23.1582C3.54612 20.862 2.25562 17.7475 2.25562 14.5002C2.25562 11.2529 3.54577 8.13803 5.84196 5.84219C8.13814 3.54635 11.2527 2.25585 14.5 2.25585C17.7472 2.25585 20.8621 3.54601 23.158 5.84219C25.4538 8.13837 26.7443 11.2529 26.7443 14.5002C26.7405 17.7465 25.4494 20.8589 23.154 23.1542C20.8584 25.4497 17.7461 26.7408 14.5 26.7446Z" fill="white" />
+												</svg>
+											</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												Кафе и залыдля мероприятий
+											</div>
+											<div class="slide-location__text">
+												<p>
+													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
+													компанию.
+												</p>
+												<p>
+													2 индивидуальные комнаты для проведения детских мероприятий.
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">бластер-арена</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/02.webp" type="image/webp"><img src="img/location-block/1/02.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												бластер-арена
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Пистолеты с поролоновыми пулями, разнообразные препятствия и укрытия, очки для
+													защиты глаз. Идеальное место для
+													проведения детских соревнований и развлечений!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="location-info__slide slide-location swiper-slide">
+								<div class="slide-location__single">
+									<div class="slide-location__front">
+										<div class="slide-location__content">
+											<div class="slide-location__title">зона отдыха</div>
+										</div>
+										<div class="slide-location__bg">
+											<picture><source srcset="img/location-block/1/04.webp" type="image/webp"><img src="img/location-block/1/04.jpg" alt="image"></picture>
+										</div>
+									</div>
+									<div class="slide-location__back">
+										<div class="slide-location__content">
+											<div class="slide-location__title slide-location__title_black">
+												зона отдыха
+											</div>
+											<div class="slide-location__text">
+												<p>
+													Play Station 5 и телевизор с диагональю 65 дюймов, удобные пуфики, бильярд Pool,
+													Кикер - настольный футбол, игровой
+													автомат с ретро играми, зона для посетителей - можно пить кофе и следить за
+													детьми. Доступ к зоне отдыха включен в любой
+													билет!
+												</p>
+											</div>
+										</div>
+										<button class="slide-location__close">
+											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
+												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
-			<div class="location-info">
+			</div>
+			<div class="location-info location-info_reverse">
 				<div class="location-info__container location-info__container_wide">
 					<div class="location-info__content">
 						<div data-da=".location-info__slider_front, 1085,last" class="location-info__pagination">
@@ -412,149 +655,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="location-info location-info_reverse">
-				<div class="location-info__container location-info__container_wide">
-					<div class="location-info__content">
-
-						<div data-da=".location-info__slider_reverse, 1085,last" class="location-info__pagination">
-							<div class="swiper-pagination swiper-pagination_reverse"></div>
-						</div>
-						<div class="location-info__title">Москва</div>
-						<div class="location-info__detail-info">
-							<ul class="location-info__address-list">
-								<li>
-									<a href="#">пр-т Маршала Жукова, 4</a>
-									<span>Пн-Вс 12:00—23:00</span>
-								</li>
-								<li>
-									<a href="#">Кутузовский пр-т, 36, стр.6</a>
-									<span>Пн-Вс 12:00—23:00</span>
-								</li>
-								<li>
-									<a href="#">ул. Смирновская, 25, стр. 1</a>
-									<span>Пн-Пт 12:00—22:00 / Сб-Вс, праздничные дни и дни школьных каникул 9:00—22:00</span>
-								</li>
-							</ul>
-						</div>
-						<div data-da=".location-info__slider_reverse, 479.98,last" class="location-info__cta">
-							<a href="#" class="location-info__button button button_transparent">Перейти</a>
-						</div>
-					</div>
-					<div class="location-info__slider location-info__slider_reverse swiper">
-						<div class="location-info__wrapper swiper-wrapper">
-							<div class="location-info__slide slide-location swiper-slide">
-								<div class="slide-location__single">
-									<div class="slide-location__front">
-										<div class="slide-location__content">
-											<div class="slide-location__title">Веревочный парк</div>
-											<span class="slide-location__count">9</span>
-											<div class="slide-location__info">
-												<span>препядствий</span>
-												<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15.7647 6.66535C15.7647 7.36417 15.1983 7.93053 14.4996 7.93053C13.8008 7.93053 13.2344 7.36412 13.2344 6.66535C13.2344 5.96676 13.8008 5.40039 14.4996 5.40039C15.1983 5.40039 15.7647 5.9668 15.7647 6.66535Z" fill="white" />
-													<path d="M17.8613 20.1563C16.5676 20.6732 15.7651 21.5806 15.7651 20.4417L15.7649 10.7164C15.7649 9.406 14.4336 9.04591 13.2347 9.80538C12.0269 10.5705 11.507 11.5232 10.7727 12.3079C10.6639 12.4221 10.6488 12.5967 10.7367 12.7278C10.8244 12.859 10.9914 12.9118 11.1386 12.855C12.4323 12.338 13.2347 11.4306 13.2347 12.5695L13.235 22.2949C13.235 23.6053 14.5663 23.9653 15.7652 23.2059C16.973 22.4408 17.4929 21.488 18.2272 20.7034C18.336 20.589 18.3509 20.4145 18.2632 20.2833C18.1755 20.1522 18.0085 20.0994 17.8613 20.1563Z" fill="white" />
-													<path d="M14.5 5.75082e-05C10.6542 5.75082e-05 6.96629 1.5278 4.24695 4.24701C1.52774 6.96623 0 10.6546 0 14.5C0 18.3454 1.52774 22.0337 4.24695 24.753C6.96617 27.4723 10.6546 29 14.5 29C18.3454 29 22.0337 27.4723 24.753 24.753C27.4722 22.0338 28.9999 18.3454 28.9999 14.5C28.9999 11.9548 28.3299 9.45431 27.0573 7.25001C25.7847 5.04572 23.9542 3.21527 21.7499 1.94266C19.5456 0.670051 17.0451 0 14.4999 0L14.5 5.75082e-05ZM14.5 26.7446C11.2525 26.7446 8.1378 25.4544 5.84196 23.1582C3.54612 20.862 2.25562 17.7475 2.25562 14.5002C2.25562 11.2529 3.54577 8.13803 5.84196 5.84219C8.13814 3.54635 11.2527 2.25585 14.5 2.25585C17.7472 2.25585 20.8621 3.54601 23.158 5.84219C25.4538 8.13837 26.7443 11.2529 26.7443 14.5002C26.7405 17.7465 25.4494 20.8589 23.154 23.1542C20.8584 25.4497 17.7461 26.7408 14.5 26.7446Z" fill="white" />
-												</svg>
-											</div>
-										</div>
-										<div class="slide-location__bg">
-											<picture><source srcset="img/location-block/01.webp" type="image/webp"><img src="img/location-block/01.jpg" alt="image"></picture>
-										</div>
-									</div>
-									<div class="slide-location__back">
-										<div class="slide-location__content">
-											<div class="slide-location__title slide-location__title_black">
-												Кафе и залыдля мероприятий
-											</div>
-											<div class="slide-location__text">
-												<p>
-													В кафе можно просто перекусить, а можно заказать банкетное меню на большую
-													компанию.
-												</p>
-												<p>
-													2 индивидуальные комнаты для проведения детских мероприятий.
-												</p>
-											</div>
-										</div>
-										<button class="slide-location__close">
-											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
-												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="location-info__slide slide-location swiper-slide">
-								<div class="slide-location__single">
-									<div class="slide-location__front">
-										<div class="slide-location__content">
-											<div class="slide-location__title">бластер-арена</div>
-										</div>
-										<div class="slide-location__bg">
-											<picture><source srcset="img/location-block/1/02.webp" type="image/webp"><img src="img/location-block/1/02.jpg" alt="image"></picture>
-										</div>
-									</div>
-									<div class="slide-location__back">
-										<div class="slide-location__content">
-											<div class="slide-location__title slide-location__title_black">
-												бластер-арена
-											</div>
-											<div class="slide-location__text">
-												<p>
-													Пистолеты с поролоновыми пулями, разнообразные препятствия и укрытия, очки для
-													защиты глаз. Идеальное место для
-													проведения детских соревнований и развлечений!
-												</p>
-											</div>
-										</div>
-										<button class="slide-location__close">
-											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
-												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="location-info__slide slide-location swiper-slide">
-								<div class="slide-location__single">
-									<div class="slide-location__front">
-										<div class="slide-location__content">
-											<div class="slide-location__title">зона отдыха</div>
-										</div>
-										<div class="slide-location__bg">
-											<picture><source srcset="img/location-block/1/04.webp" type="image/webp"><img src="img/location-block/1/04.jpg" alt="image"></picture>
-										</div>
-									</div>
-									<div class="slide-location__back">
-										<div class="slide-location__content">
-											<div class="slide-location__title slide-location__title_black">
-												зона отдыха
-											</div>
-											<div class="slide-location__text">
-												<p>
-													Play Station 5 и телевизор с диагональю 65 дюймов, удобные пуфики, бильярд Pool,
-													Кикер - настольный футбол, игровой
-													автомат с ретро играми, зона для посетителей - можно пить кофе и следить за
-													детьми. Доступ к зоне отдыха включен в любой
-													билет!
-												</p>
-											</div>
-										</div>
-										<button class="slide-location__close">
-											<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 1L18 18" stroke="black" stroke-width="2" />
-												<path d="M18 1L1 18" stroke="black" stroke-width="2" />
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<section class="offers">
 				<div class="offers__container offers__container_wide">
 					<div class="offers__header">
@@ -591,9 +691,9 @@
 						<!-- Custom select -->
 						<div data-tabs class="tabs">
 							<nav data-tabs-titles class="tabs__navigation">
-								<button type="button" class="tabs__title _tab-active">Разовое посещения</button>
-								<button type="button" class="tabs__title">Услуги</button>
-								<button type="button" class="tabs__title">Дни рождения</button>
+								<button type="button" class="tabs__title _tab-active">Разовое посещение</button>
+								<button type="button" class="tabs__title">Услугa</button>
+								<button type="button" class="tabs__title">День рождения</button>
 							</nav>
 							<div data-tabs-body class="tabs__content">
 								<div class="tabs__body">
@@ -602,7 +702,8 @@
 										<nav data-tabs-titles class="subtab__navigation">
 											<button type="button" class="subtab__title _tab-active">Одна зона</button>
 											<button type="button" class="subtab__title">Две зоны</button>
-											<button type="button" class="subtab__title">Бластер-арена</button>
+											<button type="button" class="subtab__title">Golden ticket</button>
+											<button type="button" class="subtab__title">Platinum Ticket</button>
 										</nav>
 										<div data-tabs-body class="subtab__content">
 											<div class="subtab__body">
@@ -610,7 +711,7 @@
 													<div class="subtab__label">Что подразумевает?</div>
 													<p>Для посещения можно выбрать одну зону из представленных</p>
 												</div>
-												<div data-mobile="false" class="subtab__slider swiper">
+												<div data-mobile="false" class="subtab__slider subtab__slider_1 swiper">
 													<div class="subtab__wrapper swiper-wrapper">
 														<div class="subtab__slide swiper-slide">
 															<label class="card-radio">
@@ -729,8 +830,11 @@
 															</div>
 														</div>
 														<div class="tickets-subtab__footer">
-															<p class="tickets-subtab__message">*Цена указана с НДС и без дополнительных
-																стоимостей за услугу</p>
+															<p class="tickets-subtab__message">
+																Стоимость билета на включает НДС в связи с применением упрощенной
+																системы налогообложения”
+
+															</p>
 															<a href="#" class="tickets-subtab__shopping-card shopping-card">
 																<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
@@ -744,24 +848,576 @@
 												</div>
 											</div>
 											<div class="subtab__body">
-												Содержимое второго таба
+												<div class="subtab__header-block">
+													<div class="subtab__label">Что подразумевает?</div>
+													<p>Для посещения можно выбрать одну зону из представленных</p>
+												</div>
+												<div data-mobile="false" class="subtab__slider subtab__slider_2 swiper">
+													<div class="subtab__wrapper swiper-wrapper">
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/01.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Батут-арена</div>
+																	<p class="card-radio__text">Более 40 батутов, 8 наклонных</p>
+																</div>
+															</label>
+														</div>
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/02.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Верёвочный парк</div>
+																	<p class="card-radio__text">Трасса
+																		веревочного парка состоит из 15
+																		различных ловушек и
+																		препятствий.</p>
+																</div>
+															</label>
+														</div>
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/03.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Полоса препятствий</div>
+																	<p class="card-radio__text">
+																		Уникальная механизированная
+																		полоса препятствий 70 метров
+																		длинной и 11 препятствиями
+																	</p>
+																</div>
+															</label>
+														</div>
+														<div class="subtab__slide swiper-slide">
+															<label class="card-radio">
+																<input name="plan" class="radio" type="radio" checked>
+																<div class="card-radio__top">
+																	<img src="img/card-radio/04.svg" alt="icon">
+																</div>
+																<div class="card-radio__inner">
+																	<div class="card-radio__title">Бластер-арена</div>
+																	<p class="card-radio__text">
+																		Пистолеты с поролоновыми
+																		пулями, разнообразные
+																		препятствия и укрытия, очки
+																		для защиты глаз.
+																	</p>
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="subtab__tickets tickets-subtab">
+													<ul class="tickets-subtab__header">
+														<li>День недели</li>
+														<li>Продолжительность</li>
+														<li>Цена</li>
+														<li>Количество билетов</li>
+													</ul>
+													<div class="tickets-subtab__body">
+														<div class="tickets-subtab__items">
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Будний день</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span>2 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>1 900 ₽</span>
+																</div>
+																<div data-quantity class="tickets-subtab___quantity quantity">
+
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</div>
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Выходной</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span>2 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>2 500 ₽</span>
+																</div>
+																<div data-quantity class="tickets-subtab___quantity quantity">
+
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</div>
+														</div>
+														<div class="tickets-subtab__footer">
+															<p class="tickets-subtab__message">
+																Стоимость билета на включает НДС в связи с применением упрощенной
+																системы налогообложения”
+															</p>
+															<a href="#" class="tickets-subtab__shopping-card shopping-card">
+																<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
+																	<path d="M5.10845 3.69083L4.35159 0.700195H0.599609V1.93861H3.3198L5.58836 10.9V10.8999C5.22941 11.285 5.04196 11.7866 5.06506 12.2995C5.08816 12.8125 5.32024 13.297 5.71266 13.6518C6.10508 14.0064 6.62728 14.2036 7.1699 14.2022H19.1021V12.9638H7.16757C6.88302 12.9638 6.62023 12.8202 6.47798 12.5871C6.33571 12.3541 6.33571 12.067 6.47798 11.8339C6.62024 11.6008 6.88301 11.4571 7.16757 11.4571H18.9731L20.9996 3.69057L5.10845 3.69083ZM17.9482 10.219H6.76202L5.42269 4.92917H19.329L17.9482 10.219Z" fill="#F44336" />
+																	<path d="M7.18973 19.3002C7.79429 19.3002 8.37414 19.073 8.80158 18.6685C9.22917 18.264 9.46928 17.7154 9.46928 17.1434C9.46928 16.5714 9.22917 16.0228 8.80158 15.6184C8.37414 15.2138 7.79429 14.9866 7.18973 14.9866C6.58518 14.9866 6.00532 15.2138 5.57788 15.6184C5.15029 16.0228 4.91018 16.5714 4.91018 17.1434C4.91125 17.7151 5.15181 18.263 5.57909 18.6673C6.00636 19.0716 6.58549 19.2991 7.18973 19.3002ZM7.18973 16.2229C7.44704 16.2229 7.69383 16.3197 7.87582 16.4917C8.0578 16.6637 8.1602 16.8973 8.16036 17.1407C8.16066 17.3841 8.05856 17.6176 7.87688 17.79C7.6952 17.9624 7.44855 18.0595 7.19111 18.0598C6.9338 18.0602 6.68686 17.9639 6.50456 17.792C6.32227 17.6201 6.21956 17.3869 6.21895 17.1434C6.21895 16.8997 6.3212 16.6657 6.50319 16.4932C6.68518 16.3206 6.93214 16.2234 7.18974 16.2229L7.18973 16.2229Z" fill="#F44336" />
+																</svg>
+																<span>Перейти в корзину</span>
+															</a>
+														</div>
+													</div>
+												</div>
 											</div>
 											<div class="subtab__body">
-												Содержимое третьего таба
+												<div class="subtab__header-block">
+													<div class="subtab__label">Что входит?</div>
+													<p>Посещение батутной зоны, полосы препятствий, веревочного парка и бластер
+														арены</p>
+												</div>
+												<div class="subtab__tickets tickets-subtab">
+													<ul class="tickets-subtab__header tickets-subtab__header_toggle">
+														<li>День недели</li>
+														<li>Продолжительность</li>
+														<li>Цена</li>
+														<li>Количество билетов</li>
+													</ul>
+													<div class="tickets-subtab__body">
+														<div class="tickets-subtab__items tickets-subtab__items_toogle">
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Будний день</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<form action="#" class="toogle-radio">
+																		<div class="switch-field">
+																			<input type="radio" id="radio-one" name="switch-one" value="yes" checked />
+																			<label for="radio-one">3 часа</label>
+																			<input type="radio" id="radio-two" name="switch-one" value="no" />
+																			<label for="radio-two">Весь день</label>
+																		</div>
+																	</form>
+
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>2 500 ₽</span>
+																</div>
+																<div data-quantity class="tickets-subtab___quantity quantity">
+
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</div>
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Выходной</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span>3 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>3 000 ₽</span>
+																</div>
+																<div data-quantity class="tickets-subtab___quantity quantity">
+
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="subtab__blaster blaster-subtab">
+													<div class="blaster-subtab__header-block">
+														<div class="blaster-subtab__title">Бластер-арена</div>
+														<p class="blaster-subtab__alert">Стоимость игры на Бластер арене отдельно от
+															билета</p>
+													</div>
+													<div class="subtab__tickets tickets-subtab">
+														<div class="tickets-subtab__body">
+															<div class="tickets-subtab__items tickets-subtab__items_toogle">
+																<div class="tickets-subtab__item">
+																	<div class="tickets-subtab__day">
+																		<div class="tickets-subtab__mobile-label">День недели</div>
+																		<span>Будний день</span>
+																	</div>
+																	<div class="tickets-subtab__hours">
+																		<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																		<span>20 минут</span>
+																	</div>
+																	<div class="tickets-subtab__price">
+																		<div class="tickets-subtab__mobile-label">Цена</div>
+																		<span>600 ₽</span>
+																	</div>
+																	<div data-quantity class="tickets-subtab___quantity quantity">
+
+																		<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																		<div class="quantity__input">
+																			<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																		</div>
+																		<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																	</div>
+																</div>
+																<div class="tickets-subtab__item">
+																	<div class="tickets-subtab__day">
+																		<div class="tickets-subtab__mobile-label">День недели</div>
+																		<span>Выходной</span>
+																	</div>
+																	<div class="tickets-subtab__hours">
+																		<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																		<span>20 минут</span>
+																	</div>
+																	<div class="tickets-subtab__price">
+																		<div class="tickets-subtab__mobile-label">Цена</div>
+																		<span>800 ₽</span>
+																	</div>
+																	<div data-quantity class="tickets-subtab___quantity quantity">
+
+																		<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																		<div class="quantity__input">
+																			<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+																		</div>
+																		<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																	</div>
+																</div>
+															</div>
+															<div class="tickets-subtab__footer">
+																<p class="tickets-subtab__message">
+																	Стоимость билета на включает НДС в связи с применением упрощенной
+																	системы налогообложения”
+																</p>
+																<a href="#" class="tickets-subtab__shopping-card shopping-card">
+																	<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
+																		<path d="M5.10845 3.69083L4.35159 0.700195H0.599609V1.93861H3.3198L5.58836 10.9V10.8999C5.22941 11.285 5.04196 11.7866 5.06506 12.2995C5.08816 12.8125 5.32024 13.297 5.71266 13.6518C6.10508 14.0064 6.62728 14.2036 7.1699 14.2022H19.1021V12.9638H7.16757C6.88302 12.9638 6.62023 12.8202 6.47798 12.5871C6.33571 12.3541 6.33571 12.067 6.47798 11.8339C6.62024 11.6008 6.88301 11.4571 7.16757 11.4571H18.9731L20.9996 3.69057L5.10845 3.69083ZM17.9482 10.219H6.76202L5.42269 4.92917H19.329L17.9482 10.219Z" fill="#F44336" />
+																		<path d="M7.18973 19.3002C7.79429 19.3002 8.37414 19.073 8.80158 18.6685C9.22917 18.264 9.46928 17.7154 9.46928 17.1434C9.46928 16.5714 9.22917 16.0228 8.80158 15.6184C8.37414 15.2138 7.79429 14.9866 7.18973 14.9866C6.58518 14.9866 6.00532 15.2138 5.57788 15.6184C5.15029 16.0228 4.91018 16.5714 4.91018 17.1434C4.91125 17.7151 5.15181 18.263 5.57909 18.6673C6.00636 19.0716 6.58549 19.2991 7.18973 19.3002ZM7.18973 16.2229C7.44704 16.2229 7.69383 16.3197 7.87582 16.4917C8.0578 16.6637 8.1602 16.8973 8.16036 17.1407C8.16066 17.3841 8.05856 17.6176 7.87688 17.79C7.6952 17.9624 7.44855 18.0595 7.19111 18.0598C6.9338 18.0602 6.68686 17.9639 6.50456 17.792C6.32227 17.6201 6.21956 17.3869 6.21895 17.1434C6.21895 16.8997 6.3212 16.6657 6.50319 16.4932C6.68518 16.3206 6.93214 16.2234 7.18974 16.2229L7.18973 16.2229Z" fill="#F44336" />
+																	</svg>
+																	<span>Перейти в корзину</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="subtab__body">
+												<div class="subtab__header-block">
+													<div class="subtab__label">Что входит?</div>
+													<p>Посещение батутной зоны, полосы препятствий, веревочного парка и бластер
+														арены</p>
+												</div>
+												<div class="subtab__tickets tickets-subtab">
+													<ul class="tickets-subtab__header tickets-subtab__header_platinum">
+														<li>День недели</li>
+														<li>Продолжительность</li>
+														<li>Цена</li>
+														<li></li>
+													</ul>
+													<div class="tickets-subtab__body">
+														<div class="tickets-subtab__items">
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Будний день</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span>3 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>3 800 ₽</span>
+																</div>
+																<div class="tickets-subtab__alert">
+																	Оплата при посещении
+																</div>
+															</div>
+															<div class="tickets-subtab__item">
+																<div class="tickets-subtab__day">
+																	<div class="tickets-subtab__mobile-label">День недели</div>
+																	<span>Выходной</span>
+																</div>
+																<div class="tickets-subtab__hours">
+																	<div class="tickets-subtab__mobile-label">Продолжительность</div>
+																	<span class="tickets-subtab__more-info">4 часа</span>
+																</div>
+																<div class="tickets-subtab__price">
+																	<div class="tickets-subtab__mobile-label">Цена</div>
+																	<span>4 300 ₽</span>
+																</div>
+																<div class="tickets-subtab__alert">
+																	Оплата при посещении
+																</div>
+															</div>
+														</div>
+														<div class="tickets-subtab__footer">
+															<div class="tickets-subtab__text-block">
+																<p class="tickets-subtab__message">
+																	Стоимость билета на включает НДС в связи с применением упрощенной
+																	системы налогообложения”
+																</p>
+																<p class="tickets-subtab__message">
+																	Посещение батутной зоны + полосы препятствий + веревочного парка +
+																	бластер арены + скалодром
+																</p>
+															</div>
+															<a href="#" class="tickets-subtab__shopping-card shopping-card">
+																<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
+																	<path d="M5.10845 3.69083L4.35159 0.700195H0.599609V1.93861H3.3198L5.58836 10.9V10.8999C5.22941 11.285 5.04196 11.7866 5.06506 12.2995C5.08816 12.8125 5.32024 13.297 5.71266 13.6518C6.10508 14.0064 6.62728 14.2036 7.1699 14.2022H19.1021V12.9638H7.16757C6.88302 12.9638 6.62023 12.8202 6.47798 12.5871C6.33571 12.3541 6.33571 12.067 6.47798 11.8339C6.62024 11.6008 6.88301 11.4571 7.16757 11.4571H18.9731L20.9996 3.69057L5.10845 3.69083ZM17.9482 10.219H6.76202L5.42269 4.92917H19.329L17.9482 10.219Z" fill="#F44336" />
+																	<path d="M7.18973 19.3002C7.79429 19.3002 8.37414 19.073 8.80158 18.6685C9.22917 18.264 9.46928 17.7154 9.46928 17.1434C9.46928 16.5714 9.22917 16.0228 8.80158 15.6184C8.37414 15.2138 7.79429 14.9866 7.18973 14.9866C6.58518 14.9866 6.00532 15.2138 5.57788 15.6184C5.15029 16.0228 4.91018 16.5714 4.91018 17.1434C4.91125 17.7151 5.15181 18.263 5.57909 18.6673C6.00636 19.0716 6.58549 19.2991 7.18973 19.3002ZM7.18973 16.2229C7.44704 16.2229 7.69383 16.3197 7.87582 16.4917C8.0578 16.6637 8.1602 16.8973 8.16036 17.1407C8.16066 17.3841 8.05856 17.6176 7.87688 17.79C7.6952 17.9624 7.44855 18.0595 7.19111 18.0598C6.9338 18.0602 6.68686 17.9639 6.50456 17.792C6.32227 17.6201 6.21956 17.3869 6.21895 17.1434C6.21895 16.8997 6.3212 16.6657 6.50319 16.4932C6.68518 16.3206 6.93214 16.2234 7.18974 16.2229L7.18973 16.2229Z" fill="#F44336" />
+																</svg>
+																<span>Перейти в корзину</span>
+															</a>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="subtab__body">
-									Содержимое второго таба
+									<div class="subtab__services services-subtab">
+										<div class="services-subtab__header">
+											<div class="services-subtab__subtitle">Программа с тренером-аниматором</div>
+											<p class="services-subtab__description">Индивидуальная программа</p>
+										</div>
+										<div class="subtab__tickets tickets-subtab">
+											<ul class="tickets-subtab__header tickets-subtab__header_services">
+												<li>Часы</li>
+												<li>Цена (будний день)</li>
+												<li>Количество билетов</li>
+											</ul>
+											<div class="tickets-subtab__body">
+												<div class="tickets-subtab__items tickets-subtab__items_services">
+													<div class="tickets-subtab__item">
+														<div class="tickets-subtab__day">
+															<div class="tickets-subtab__mobile-label">День недели</div>
+															<form action="#" class="toogle-radio">
+																<div class="switch-field">
+																	<input type="radio" id="radio-one1" name="switch-one" value="yes" checked />
+																	<label for="radio-one1">1 час</label>
+																	<input type="radio" id="radio-two1" name="switch-one" value="no" />
+																	<label for="radio-two1">2 часа</label>
+																</div>
+															</form>
+														</div>
+														<div class="tickets-subtab__hours">
+															<div class="tickets-subtab__mobile-label">Продолжительность</div>
+															<span>9 000 ₽ / час</span>
+														</div>
+														<div data-quantity class="tickets-subtab___quantity quantity">
+
+															<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+															<div class="quantity__input">
+																<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+															</div>
+															<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+														</div>
+													</div>
+												</div>
+
+												<div class="services-subtab__header">
+													<div class="services-subtab__subtitle">Аренда всего центра</div>
+													<p class="services-subtab__description">Обсуждается с менеджером <a href="#">Связаться</a></p>
+												</div>
+
+												<div class="tickets-subtab__footer">
+													<p class="tickets-subtab__message">
+														Стоимость билета на включает НДС в связи с применением упрощенной
+														системы налогообложения”
+													</p>
+													<div class="tickets-subtab__actions">
+														<a href="#" class="tickets-subtab__shopping-card shopping-card">
+															<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
+																<path d="M5.10845 3.69083L4.35159 0.700195H0.599609V1.93861H3.3198L5.58836 10.9V10.8999C5.22941 11.285 5.04196 11.7866 5.06506 12.2995C5.08816 12.8125 5.32024 13.297 5.71266 13.6518C6.10508 14.0064 6.62728 14.2036 7.1699 14.2022H19.1021V12.9638H7.16757C6.88302 12.9638 6.62023 12.8202 6.47798 12.5871C6.33571 12.3541 6.33571 12.067 6.47798 11.8339C6.62024 11.6008 6.88301 11.4571 7.16757 11.4571H18.9731L20.9996 3.69057L5.10845 3.69083ZM17.9482 10.219H6.76202L5.42269 4.92917H19.329L17.9482 10.219Z" fill="#F44336" />
+																<path d="M7.18973 19.3002C7.79429 19.3002 8.37414 19.073 8.80158 18.6685C9.22917 18.264 9.46928 17.7154 9.46928 17.1434C9.46928 16.5714 9.22917 16.0228 8.80158 15.6184C8.37414 15.2138 7.79429 14.9866 7.18973 14.9866C6.58518 14.9866 6.00532 15.2138 5.57788 15.6184C5.15029 16.0228 4.91018 16.5714 4.91018 17.1434C4.91125 17.7151 5.15181 18.263 5.57909 18.6673C6.00636 19.0716 6.58549 19.2991 7.18973 19.3002ZM7.18973 16.2229C7.44704 16.2229 7.69383 16.3197 7.87582 16.4917C8.0578 16.6637 8.1602 16.8973 8.16036 17.1407C8.16066 17.3841 8.05856 17.6176 7.87688 17.79C7.6952 17.9624 7.44855 18.0595 7.19111 18.0598C6.9338 18.0602 6.68686 17.9639 6.50456 17.792C6.32227 17.6201 6.21956 17.3869 6.21895 17.1434C6.21895 16.8997 6.3212 16.6657 6.50319 16.4932C6.68518 16.3206 6.93214 16.2234 7.18974 16.2229L7.18973 16.2229Z" fill="#F44336" />
+															</svg>
+															<span>Перейти в корзину</span>
+														</a>
+														<a href="#" class="tickets-subtab__callback callback">
+															<span>Перейти в корзину</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
 								</div>
 								<div class="subtab__body">
-									Содержимое третьего таба
+									<div class="subtab__services services-subtab">
+										<div class="services-subtab__header">
+											<div class="services-subtab__subtitle">Пакетные тарифы</div>
+											<p class="services-subtab__description">Входной билет не входит в данное предложение и
+												оплачивается отдельно</p>
+										</div>
+										<div data-mobile="false" class="subtab__slider subtab__slider_3 swiper">
+											<div class="subtab__wrapper swiper-wrapper">
+												<div class="subtab__slide swiper-slide">
+													<label class="card-radio">
+														<div class="card-radio__content">
+															<input name="plan" class="radio radio_center" type="radio" checked>
+															<div class="card-radio__top">
+																<span class="card-radio__discount-info">
+																	Выгода до 20%
+																</span>
+															</div>
+															<div class="card-radio__inner">
+																<div class="card-radio__title">Праздничное Волшебство</div>
+																<ul class="card-radio__list">
+																	<li>
+																		1 час программы с инструктором
+																	</li>
+																	<li>
+																		2 часа Party Room
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<span class="card-radio__total-price">
+															15 000 ₽
+														</span>
+													</label>
+												</div>
+												<div class="subtab__slide swiper-slide">
+													<label class="card-radio">
+														<div class="card-radio__content">
+															<input name="plan" class="radio radio_center" type="radio" checked>
+															<div class="card-radio__top">
+																<span class="card-radio__discount-info">
+																	Выгода до 20%
+																</span>
+															</div>
+															<div class="card-radio__inner">
+																<div class="card-radio__title">Эксклюзивный Праздник</div>
+																<ul class="card-radio__list">
+																	<li>
+																		2 часа программы с инструктором
+																	</li>
+																	<li>
+																		3 часа Party Room
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<span class="card-radio__total-price">
+															27 000 ₽
+														</span>
+													</label>
+												</div>
+												<div class="subtab__slide swiper-slide">
+													<label class="card-radio">
+														<div class="card-radio__content">
+															<input name="plan" class="radio radio_center" type="radio" checked>
+															<div class="card-radio__top">
+																<span class="card-radio__discount-info">
+																	Выгода до 20%
+																</span>
+															</div>
+															<div class="card-radio__inner">
+																<div class="card-radio__title">Праздник Роскоши</div>
+																<ul class="card-radio__list">
+																	<li>
+																		1 час программы с инструктором
+																	</li>
+																	<li>
+																		3 часа Party Room
+																	</li>
+																</ul>
+																<div class="card-radio__show">
+																	<div class="card-radio__topic">Шоу-программа на выбор</div>
+																	<ul>
+																		<li>Кажется, нащупал</li>
+																		<li>Тесла шоу</li>
+																		<li>Фокусник</li>
+																		<li>Химическое шоу</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<span class="card-radio__total-price">
+															37 000 ₽
+														</span>
+													</label>
+												</div>
+												<div class="subtab__slide swiper-slide">
+													<label class="card-radio">
+														<div class="card-radio__content">
+															<input name="plan" class="radio radio_center" type="radio" checked>
+															<div class="card-radio__top">
+																<span style="opacity: 0; visibility: hidden;" class="card-radio__discount-info">
+																	Выгода до 20%
+																</span>
+															</div>
+															<div class="card-radio__inner">
+																<div class="card-radio__title">Индивидуальный праздник</div>
+																<ul class="card-radio__list">
+																	<li>
+																		Возможно заказать, обговаривается в частном порядке
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="tickets-subtab__footer">
+											<p class="tickets-subtab__message">
+												Стоимость билета на включает НДС в связи с применением упрощенной
+												системы налогообложения”
+											</p>
+											<div class="tickets-subtab__actions">
+												<a href="#" class="tickets-subtab__shopping-card shopping-card">
+													<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M19.2462 17.1434C19.2462 16.5714 19.0061 16.0231 18.5788 15.6185C18.1513 15.2141 17.5718 14.9868 16.9674 14.9866C16.3628 14.9865 15.7831 15.2134 15.3555 15.6176C14.9278 16.0218 14.6874 16.5701 14.6871 17.1419C14.6867 17.7139 14.9263 18.2626 15.3534 18.6673C15.7805 19.0719 16.36 19.2996 16.9645 19.3002C17.569 19.2996 18.1487 19.0723 18.5765 18.668C19.0042 18.2638 19.2449 17.7154 19.2461 17.1434H19.2462ZM15.9937 17.1434C15.9937 16.8998 16.096 16.6662 16.2781 16.494C16.4601 16.3218 16.7071 16.2249 16.9645 16.2249C17.2218 16.2249 17.4688 16.3218 17.6509 16.494C17.8329 16.6662 17.9351 16.8998 17.9351 17.1434C17.9351 17.387 17.8329 17.6207 17.6509 17.7928C17.4688 17.965 17.2218 18.0618 16.9645 18.0618C16.7072 18.0613 16.4605 17.9643 16.2787 17.7923C16.0967 17.6201 15.9943 17.3868 15.9937 17.1434Z" fill="#F44336" />
+														<path d="M5.10845 3.69083L4.35159 0.700195H0.599609V1.93861H3.3198L5.58836 10.9V10.8999C5.22941 11.285 5.04196 11.7866 5.06506 12.2995C5.08816 12.8125 5.32024 13.297 5.71266 13.6518C6.10508 14.0064 6.62728 14.2036 7.1699 14.2022H19.1021V12.9638H7.16757C6.88302 12.9638 6.62023 12.8202 6.47798 12.5871C6.33571 12.3541 6.33571 12.067 6.47798 11.8339C6.62024 11.6008 6.88301 11.4571 7.16757 11.4571H18.9731L20.9996 3.69057L5.10845 3.69083ZM17.9482 10.219H6.76202L5.42269 4.92917H19.329L17.9482 10.219Z" fill="#F44336" />
+														<path d="M7.18973 19.3002C7.79429 19.3002 8.37414 19.073 8.80158 18.6685C9.22917 18.264 9.46928 17.7154 9.46928 17.1434C9.46928 16.5714 9.22917 16.0228 8.80158 15.6184C8.37414 15.2138 7.79429 14.9866 7.18973 14.9866C6.58518 14.9866 6.00532 15.2138 5.57788 15.6184C5.15029 16.0228 4.91018 16.5714 4.91018 17.1434C4.91125 17.7151 5.15181 18.263 5.57909 18.6673C6.00636 19.0716 6.58549 19.2991 7.18973 19.3002ZM7.18973 16.2229C7.44704 16.2229 7.69383 16.3197 7.87582 16.4917C8.0578 16.6637 8.1602 16.8973 8.16036 17.1407C8.16066 17.3841 8.05856 17.6176 7.87688 17.79C7.6952 17.9624 7.44855 18.0595 7.19111 18.0598C6.9338 18.0602 6.68686 17.9639 6.50456 17.792C6.32227 17.6201 6.21956 17.3869 6.21895 17.1434C6.21895 16.8997 6.3212 16.6657 6.50319 16.4932C6.68518 16.3206 6.93214 16.2234 7.18974 16.2229L7.18973 16.2229Z" fill="#F44336" />
+													</svg>
+													<span>Перейти в корзину</span>
+												</a>
+												<a href="#" class="tickets-subtab__callback callback">
+													<span>Перейти в корзину</span>
+												</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -874,7 +1530,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240429145130"></script>
+	<script src="js/app.min.js?_v=20240515061959"></script>
 
 </body>
 

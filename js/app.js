@@ -4004,7 +4004,7 @@
         if (document.querySelector(".body-hero__slider")) new core(".body-hero__slider", {
             modules: [ Navigation ],
             slidesPerView: "auto",
-            spaceBetween: 120,
+            spaceBetween: 100,
             watchOverflow: true,
             speed: 800,
             breakpoints: {
@@ -4027,7 +4027,7 @@
                 },
                 1268: {
                     slidesPerView: "auto",
-                    spaceBetween: 120
+                    spaceBetween: 100
                 }
             },
             navigation: {
@@ -4112,12 +4112,12 @@
             },
             on: {}
         });
-        const waitingSlider = document.querySelector(".subtab__slider");
+        const waitingSlider = document.querySelector(".subtab__slider_1");
         let myWaitingSwiper;
         function mobileSlider() {
-            if (document.querySelector(".subtab__slider ")) {
+            if (document.querySelector(".subtab__slider_1 ")) {
                 if (window.innerWidth <= 767.98 && "false" == waitingSlider.dataset.mobile) {
-                    myWaitingSwiper = new core(".subtab__slider ", {
+                    myWaitingSwiper = new core(".subtab__slider_1 ", {
                         modules: [ Navigation, Pagination ],
                         observer: true,
                         observeParents: true,
@@ -4164,8 +4164,114 @@
             }
         }
         mobileSlider();
+        const waitingSlider2 = document.querySelector(".subtab__slider_2");
+        let myWaitingSwiper2;
+        function mobileSlider2() {
+            if (document.querySelector(".subtab__slider_2 ")) {
+                if (window.innerWidth <= 767.98 && "false" == waitingSlider2.dataset.mobile) {
+                    myWaitingSwiper2 = new core(".subtab__slider_2 ", {
+                        modules: [ Navigation, Pagination ],
+                        observer: true,
+                        observeParents: true,
+                        slidesPerView: 4.2,
+                        spaceBetween: 20,
+                        speed: 800,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        },
+                        navigation: {
+                            prevEl: ".navigation-faq-prev",
+                            nextEl: ".navigation-faq-next"
+                        },
+                        breakpoints: {
+                            320: {
+                                slidesPerView: 1.4,
+                                spaceBetween: 20
+                            },
+                            500: {
+                                slidesPerView: 2.1
+                            },
+                            768: {
+                                slidesPerView: 1.9,
+                                spaceBetween: 20
+                            },
+                            992: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            },
+                            1268: {
+                                slidesPerView: 4.2,
+                                spaceBetween: 30
+                            }
+                        },
+                        on: {}
+                    });
+                    waitingSlider2.dataset.mobile = "true";
+                }
+                if (window.innerWidth > 767.98) {
+                    waitingSlider2.dataset.mobile = "false";
+                    if (waitingSlider2.classList.contains("swiper-initialized")) myWaitingSwiper2.destroy();
+                }
+            }
+        }
+        mobileSlider2();
+        const waitingSlider3 = document.querySelector(".subtab__slider_3");
+        let myWaitingSwiper3;
+        function mobileSlider3() {
+            if (document.querySelector(".subtab__slider_3 ")) {
+                if (window.innerWidth <= 767.98 && "false" == waitingSlider3.dataset.mobile) {
+                    myWaitingSwiper3 = new core(".subtab__slider_3 ", {
+                        modules: [ Navigation, Pagination ],
+                        observer: true,
+                        observeParents: true,
+                        slidesPerView: 4.2,
+                        spaceBetween: 20,
+                        speed: 800,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        },
+                        navigation: {
+                            prevEl: ".navigation-faq-prev",
+                            nextEl: ".navigation-faq-next"
+                        },
+                        breakpoints: {
+                            320: {
+                                slidesPerView: 1.4,
+                                spaceBetween: 20
+                            },
+                            500: {
+                                slidesPerView: 2.1
+                            },
+                            768: {
+                                slidesPerView: 1.9,
+                                spaceBetween: 20
+                            },
+                            992: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            },
+                            1268: {
+                                slidesPerView: 4.2,
+                                spaceBetween: 30
+                            }
+                        },
+                        on: {}
+                    });
+                    waitingSlider3.dataset.mobile = "true";
+                }
+                if (window.innerWidth > 767.98) {
+                    waitingSlider3.dataset.mobile = "false";
+                    if (waitingSlider3.classList.contains("swiper-initialized")) myWaitingSwiper3.destroy();
+                }
+            }
+        }
+        mobileSlider3();
         window.addEventListener("resize", (() => {
             mobileSlider();
+            mobileSlider2();
+            mobileSlider3();
         }));
     }
     window.addEventListener("load", (function(e) {
